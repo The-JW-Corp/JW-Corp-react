@@ -1,9 +1,8 @@
 import React from "react";
 import "./Home.css";
-import jwblanc from "../../assets/jwlogosolutionblanc.svg";
+
 import NotreMission from "../NotreMission/NotreMission";
-import Navbar from "../Navbar/Navbar";
-import NavbarTop from "../NavbarTop/NavbarTop";
+
 import LandingPage from "../LandingPage/LandingPage";
 
 function Home() {
@@ -154,6 +153,7 @@ function Home() {
               allowFullScreen=""
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
+              title="googlemaps"
             />
           </div>
         </section>{" "}
@@ -183,6 +183,7 @@ function Home() {
                   <img
                     src="img/jwlogosolutionblanc.svg"
                     className="logo-footer-img"
+                    alt="logo jw footer"
                   />
                   <ul className="social-link" id="elements-footer">
                     <li>

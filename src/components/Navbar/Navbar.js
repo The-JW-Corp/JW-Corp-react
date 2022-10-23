@@ -1,6 +1,5 @@
 import React, {useState} from "react";
 import "./Navbar.css";
-import jwblanc from "../../assets/jwlogosolutionblanc.svg";
 
 function Navbar() {
   const [navbarOpen, setNavbarOpen] = useState(false);
@@ -31,7 +30,7 @@ function Navbar() {
         <li>Accueil</li>
         <li>Nos services</li>
         <li>Contact</li>
-        <a href="">fefzfz</a>
+        <a href="/#">fefzfz</a>
       </ul>
   </nav>
 

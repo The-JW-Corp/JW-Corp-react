@@ -1,6 +1,5 @@
 import React from "react";
 import "./NotreMission.css";
-import ReactDOM from "react-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLaptopCode } from "@fortawesome/free-solid-svg-icons";
 import { faPersonChalkboard } from "@fortawesome/free-solid-svg-icons";
@@ -18,7 +17,7 @@ function NotreMission() {
 
       <ul className="liste-services">
         <div className="services">
-          <a href="">
+          <a href="/#">
             <li>
               <div className="titre-service-et-icon">
                 <FontAwesomeIcon id="icon" icon={faPersonChalkboard}></FontAwesomeIcon>
@@ -33,7 +32,7 @@ function NotreMission() {
         </div>
 
         <div className="services">
-          <a href="">
+          <a href="/#">
             <li>
               <div className="titre-service-et-icon">
                 <FontAwesomeIcon id="icon" icon={faLaptopCode}></FontAwesomeIcon>
@@ -48,10 +47,10 @@ function NotreMission() {
         </div>
 
         <div className="services">
-          <a href="">
+          <a href="/#">
             <li>
               <div className="titre-service-et-icon">
-                <FontAwesomeIcon id="icon" icon={faClipboardList}></FontAwesomeIcon>
+                <FontAwesomeIcon id="icon" icon={faClipboardList} />
                 <h5>Audit</h5>
               </div>
               <p>
@@ -64,10 +63,10 @@ function NotreMission() {
         </div> 
 
         <div className="services">
-          <a href="">
+          <a href="/#">
             <li>
               <div className="titre-service-et-icon">
-                <FontAwesomeIcon id="icon" icon={faFlask}></FontAwesomeIcon>
+                <FontAwesomeIcon id="icon" icon={faFlask} />
                 <h5>R&amp;D</h5>
               </div>
               <p>

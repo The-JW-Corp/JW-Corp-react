@@ -1,4 +1,4 @@
-import react from "react";
+
 import "./LandingPage.css";
 function LandingPage() {
   return (
