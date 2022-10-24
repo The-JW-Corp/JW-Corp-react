@@ -8,9 +8,11 @@ const Cta = () => {
           <strong> Vous souhaitez en savoir plus ?</strong> <br /> Envoyez-nous
           un message afin de commencer à discuter autour de votre projet.
         </p>
-        <a className="cta-button" href="/#">
-          Contactez-nous
-        </a>
+        <div className="cta-wrap-button">
+          <a className="cta-button" href="/#">
+            Contactez-nous
+          </a>
+        </div>
       </div>
     </div>
   );
