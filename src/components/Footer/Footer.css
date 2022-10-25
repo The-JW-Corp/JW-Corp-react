@@ -1,0 +1,64 @@
+.footer-component{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* peut-etre ?*/
+    height: 70vh;
+}
+.footer-container-1{
+    background-color: red;
+    width: 100%;
+    height: 26%;
+}
+.footer-img-wrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: blue;
+    height: 100%;
+}
+.footer-img-wrap a:hover{
+    opacity: 0.7;
+    transition: .5s;
+}
+.footer-img-wrap > a img{
+    width: 105px;
+}
+.footer-social-wrap{
+    display: flex;
+    flex-direction: row;
+}
+.footer-social-wrap a svg:hover{
+    transition: 0.5s;
+    fill: blueviolet;
+}
+.footer-social-wrap a svg{
+    width: 30px;
+    height: 30px;
+    fill: #fff;
+}
+.footer-container-2{
+    background-color: red;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.footer-addresse-wrap{
+    width: 70%; /* a voir si 2022 ca passe*/
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-addresse-wrap > p,.footer-addresse-wrap > span, .footer-addresse-wrap > span > a{
+    color: #fff;
+    font-size: 0.6em;
+    width: 100%;
+    text-align: center;
+}
+.footer-addresse-wrap span{
+    background-color: violet;
+    width: 100%;
+}
