@@ -40,7 +40,8 @@ function LandingPage() {
             </div>
           </div>
         </h1>
-        <div className="arrow-bloc-landing-page bouncing-animation">
+        <div className="ease-landing-page"></div>
+        <div className="arrow-bloc-landing-page bouncing-animation bounce">
           <svg
             className="arrow-icon"
             xmlns="http://www.w3.org/2000/svg"
