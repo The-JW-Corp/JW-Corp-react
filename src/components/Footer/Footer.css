@@ -54,11 +54,18 @@
 }
 .footer-addresse-wrap > p,.footer-addresse-wrap > span, .footer-addresse-wrap > span > a{
     color: #fff;
-    font-size: 0.6em;
-    width: 100%;
     text-align: center;
+    line-height: 1.8;
+    letter-spacing: .5px;
+}
+.footer-addresse-wrap > p{
+    font-size: 10px;
 }
 .footer-addresse-wrap span{
     background-color: violet;
     width: 100%;
+    font-size: 11px;
+}
+.footer-addresse-wrap > span > a{
+
 }
