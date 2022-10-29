@@ -96,7 +96,7 @@
 }
 
 .arrow-icon {
-    width: 2.1em;
+    width: 1.6em;
     fill: white;
     text-decoration: none;
 }
@@ -115,7 +115,7 @@
 
 
 
-
+/* Animation fadeInUp whole H1 */
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -159,7 +159,7 @@
    }
 
 
-
+/* MEDIA QUERIES */
 @media (min-width:400px) {
     .landing-page {
         font-size: 20px;
@@ -170,17 +170,114 @@
     .underline-landing-page {
         width: 120px;
     }
+    .line-and-word2{
+        width: 90px;
+    }
     .underline-landing-page2 {
         width: 90px;
     }
+    .arrow-bloc-landing-page {
+        top: 160px;
+    }
 }
+
 @media (min-width:500px) {
     .landing-page{
         font-size: 23px;
     }
+    .line-and-word {
+        width: 145px;
+    }
+    .underline-landing-page {
+        width: 145px;
+    }
+    .line-and-word2 {
+        width: 100px;
+    }
+    .underline-landing-page2 {
+        width: 100px;
+    }
+
 }
+
 @media (min-width:600px) {
-    
+    .arrow-bloc-landing-page{
+        top: 170px;
+    }
+}
+
+@media (min-width:800px) {
+    .landing-page{
+        font-size: 32px;
+    }
+}
+
+@media (min-width:920px) {
+    .line-and-word {
+        width: 186px;
+    }
+
+    .underline-landing-page {
+        width: 186px;
+    }
+    .line-and-word2 {
+        width: 130px;
+    }
+    .underline-landing-page2 {
+        width: 130px;
+    }
+        
+}
+
+@media (min-width:1000px) {
+    .landing-page {
+        font-size: 38px;
+    }
+    .line-and-word{
+        width: 220px;
+    }
+    .underline-landing-page{
+        width: 220px;
+    }
+    .line-and-word2 {
+        width: 150px ;
+    }
+    .underline-landing-page2{
+        width: 150px ;
+    }
+}
+
+@media (min-width: 1200px) {
+    .landing-page {
+        font-size: 45px;
+    }
+    .line-and-word {
+        width: 240px;
+    }
+    .underline-landing-page {
+        width: 245px;
+    }
+    .line-and-word2 {
+        width: 160px;
+    }
+    .underline-landing-page2 {
+        width: 160px;
+    }
+}
+
+@media (min-width: 1300px) {
+    .line-and-word {
+        width: 260px;
+    }
+    .underline-landing-page{
+        width: 260px;
+    }
+    .line-and-word2 {
+        width: 180px;
+    }
+    .underline-landing-page2{
+        width: 180px;
+    }
 }
 
 

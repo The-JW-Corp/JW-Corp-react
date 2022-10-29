@@ -13,7 +13,7 @@ function LandingPage() {
               <span className="underline-landing-page">aujourd'hui</span>
               <span className="liner"></span>
             </div>
-            pour la décentralisation de  
+            pour la décentralisation de 
             <div className="line-and-word2">
               <span className="underline-landing-page2">demain.</span>
               <span className="liner transition-liner"></span>
