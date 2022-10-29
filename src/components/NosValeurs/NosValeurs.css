@@ -1,0 +1,28 @@
+.bloc-nos-valeurs{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    background-color: yellow;
+    align-items: center;
+    height: 80vh;
+}
+.nos-valeurs {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height:auto ;
+    width: 80vw;
+    background-color: grey;
+}
+
+.typed-title {
+
+}
+
+
+.nos-valeurs-paragraph {
+    /* display: flex; */
+    text-align: justify;
+    background-color: red;
+}

@@ -1,10 +1,10 @@
 import React from "react";
 import "./Home.css";
-
+import NosValeurs from "../NosValeurs/NosValeurs";
 function Home() {
   return (
     <>
-      Hello
+      <NosValeurs/>
     </>
   );
 }
