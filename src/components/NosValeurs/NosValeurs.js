@@ -1,5 +1,6 @@
 import React from "react";
 import "./NosValeurs.css";
+import { TypeAnimation } from "react-type-animation";
 
 function NosValeurs() {
   return (
@@ -7,10 +8,25 @@ function NosValeurs() {
 
     <div className="nos-valeurs">
       <div>
-        <h3 className="typed-title">Nos valeurs</h3>
+        <h3 className="nos-valeurs-title">Nos valeurs</h3>
       </div>
       <h6>
-        Parlons <span id="parlonstech"></span>
+        Parlons <span id="parlonstech">
+        <TypeAnimation
+                sequence={[
+                  "Bitcoin",
+                  1000,
+                  "transformation numérique",
+                  1500,
+                  "blockchain",
+                  1000,
+                  "smart-contracts",
+                  1000,
+                ]}
+                cursor={true}
+                repeat={Infinity}
+              />
+        </span>
       </h6>
       <p className="nos-valeurs-paragraph">
         Véritables passionnés, nous construisons nos compétences autour de la
