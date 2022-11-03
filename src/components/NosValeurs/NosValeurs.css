@@ -28,6 +28,7 @@
     width: 100%;
     font-size: 2.9em;
     /* padding-bottom: 2.2em; */
+    padding-bottom: 30%;
 }
 
 h6 {
@@ -35,16 +36,18 @@ h6 {
     font-size: 1.5em;
     color: blueviolet;
     font-weight: bolder;
-
     /* background-color: aqua; */
 }
 
 .typed-nos-valeurs{
     width: 100%;
     display: flex;
-    align-items: flex-start;
-    background-color: red;
+    /* align-items: flex-start; */
+    justify-content: center;
+
 }
+
+
 
 .nos-valeurs-paragraph {
     display: block;

@@ -9,26 +9,28 @@ function NosValeurs() {
         <div>
           <h3 className="nos-valeurs-title">Nos valeurs</h3>
         </div>
-        <h6 className="typed-nos-valeurs">
-          Parlons 
-          <span>
-            <TypeAnimation
-              sequence={[
-                " Bitcoin",
-                1000,
-                " transformation numérique",
-                1500,
-                " blockchain",
-                1000,
-                " smart-contracts",
-                1000,
-              ]}
-              cursor={true}
-              repeat={Infinity}
-            />
-
-          </span>
-        </h6>
+        <div className="bloc-typed-nos-valeurs" >
+          <div className="bloc-vide-nos-valeurs"></div>
+          <h6 className="typed-nos-valeurs">
+            Parlons 
+            <span>
+              <TypeAnimation
+                sequence={[
+                  " Bitcoin",
+                  1000,
+                  " transformation numérique",
+                  1500,
+                  " blockchain",
+                  1000,
+                  " smart-contracts",
+                  1000,
+                ]}
+                cursor={true}
+                repeat={Infinity}
+              />
+            </span>
+          </h6>
+        </div>
         <p className="nos-valeurs-paragraph">
           Véritables passionnés, nous construisons nos compétences autour de la
           Blockchain depuis 2017. La désintermédiation des services financiers,
