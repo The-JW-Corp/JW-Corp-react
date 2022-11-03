@@ -2,7 +2,6 @@
     display: flex;
     justify-content: center;
     width: 100vw;
-    /* background-color: yellow; */
     align-items: center;
     height: 80vh;
 }
@@ -12,9 +11,7 @@
     align-items: center;
     text-align: center;
     flex-direction: column;
-    /* height:  ; */
     width: 80vw;
-    /* background-color: grey; */
 }
 
 .nos-valeurs-title {
@@ -22,29 +19,22 @@
     justify-content: center;
     align-items: center;
     font-weight: 700;
-    /* flex-direction: ; */
-    /* background-color: blue; */
     height: 20vh;
     width: 100%;
     font-size: 2.9em;
-    /* padding-bottom: 2.2em; */
     padding-bottom: 30%;
 }
 
 h6 {
-    /* display: inline; */
     font-size: 1.5em;
     color: blueviolet;
     font-weight: bolder;
-    /* background-color: aqua; */
 }
 
 .typed-nos-valeurs{
     width: 100%;
     display: flex;
-    /* align-items: flex-start; */
     justify-content: center;
-
 }
 
 
@@ -53,7 +43,6 @@ h6 {
     display: block;
     justify-content: center;
     text-align: justify;
-    /* background-color: red; */
     font-size: 1.2em;
     padding: 5%;
     width: 40vw;
