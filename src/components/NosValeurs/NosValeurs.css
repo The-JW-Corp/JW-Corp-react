@@ -2,24 +2,26 @@
     display: flex;
     justify-content: center;
     width: 100vw;
-    background-color: yellow;
+    /* background-color: yellow; */
     align-items: center;
     height: 80vh;
 }
 .nos-valeurs {
-    display: block;
-    justify-content: center;
+    display: flex;
+    justify-content: center ;
     align-items: center;
     text-align: center;
+    flex-direction: column;
     /* height:  ; */
     width: 80vw;
-    background-color: grey;
+    /* background-color: grey; */
 }
 
 .nos-valeurs-title {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-weight: 700;
     /* flex-direction: ; */
     /* background-color: blue; */
     height: 20vh;
@@ -29,17 +31,28 @@
 }
 
 h6 {
-    display: inline;
+    /* display: inline; */
     font-size: 1.5em;
     color: blueviolet;
-    font-weight: 500;
+    font-weight: bolder;
+
+    /* background-color: aqua; */
 }
-.nos-valeurs-paragraph {
-    /* display: block; */
-    /* justify-content: center; */
-    text-align: justify;
+
+.typed-nos-valeurs{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
     background-color: red;
+}
+
+.nos-valeurs-paragraph {
+    display: block;
+    justify-content: center;
+    text-align: justify;
+    /* background-color: red; */
     font-size: 1.2em;
     padding: 5%;
     width: 40vw;
+    font-weight: 400;
 }
