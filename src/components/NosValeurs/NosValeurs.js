@@ -1,6 +1,7 @@
 import React from "react";
 import "./NosValeurs.css";
 import { TypeAnimation } from "react-type-animation";
+import GreyParagraph from "../UIelement/GreyParagraph";
 
 function NosValeurs() {
   return (
@@ -31,7 +32,8 @@ function NosValeurs() {
             </span>
           </h6>
         </div>
-        <p className="nos-valeurs-paragraph">
+        <GreyParagraph
+        >
           Véritables passionnés, nous construisons nos compétences autour de la
           Blockchain depuis 2017. La désintermédiation des services financiers,
           la décentralisation de la monnaie, une gouvernance "trustless", des
@@ -41,7 +43,7 @@ function NosValeurs() {
           nous avons la volonté de participer activement à sa réalisation c'est
           pourquoi depuis le <strong>04/03/2021</strong> nous avons lancer la JW
           Corp.
-        </p>
+        </GreyParagraph>
       </div>
     </section>
   );
