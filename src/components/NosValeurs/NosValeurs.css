@@ -37,5 +37,17 @@ h6 {
     justify-content: center;
 }
 
+@media (max-width:400px) {
+    .bloc-nos-valeurs {
+        height: 100%;
+    }
+    
+    .nos-valeurs {
+        background-color: red;
+        font-size: 1.1em;
+        height: 100vh;
+    }
+}
+
 
 
