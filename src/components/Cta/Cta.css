@@ -104,25 +104,21 @@
 @media (min-width: 1024px) {
   .cta-wrap {
     width: 950px;
-    background-color: blue;
   }
   .cta-text {
     width: 700px;
-    background-color: red;
   }
 }
 @media (min-width: 1200px) {
     .cta-wrap{
         flex-direction: row;
         align-items: center;
-        background-color: green;
         width: 1056px;
     }
     .cta-text{
         width: 70%;
     }
     .cta-wrap-button{
-        background-color: aqua;
         width: 30%;
     }
 }
