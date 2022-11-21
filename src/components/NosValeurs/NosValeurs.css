@@ -5,6 +5,10 @@
     align-items: center;
     height: 80vh;
 }
+
+
+
+
 .nos-valeurs {
     display: flex;
     justify-content: center ;
@@ -13,6 +17,8 @@
     flex-direction: column;
     width: 80vw;
 }
+
+
 
 .nos-valeurs-title {
     display: flex;
@@ -37,16 +43,32 @@ h6 {
     justify-content: center;
 }
 
-@media (max-width:400px) {
+@media (max-width:450px) {
     .bloc-nos-valeurs {
         height: 100%;
+        }
+
+    .nos-valeurs {
+        font-size: 1.1em;
+        width: 80vh;
+    }
+    .nos-valeurs-title{
+        padding-bottom: 0%;
+        font-size: 1.9em;
+    }
+
+    .bloc-typed-nos-valeurs{
+        font-size: 0.6em;
+    }
+
+    .nos-valeurs-paragraphe p{
+        font-size: 0.8em!important;
+        padding: 0%!important;
+        padding-top: 20%!important;
+        line-height: 20px !important;
+        width: 80vw!important;
     }
     
-    .nos-valeurs {
-        background-color: red;
-        font-size: 1.1em;
-        height: 100vh;
-    }
 }
 
 

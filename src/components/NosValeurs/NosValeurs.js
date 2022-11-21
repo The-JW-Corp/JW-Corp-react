@@ -32,6 +32,9 @@ function NosValeurs() {
             </span>
           </h6>
         </div>
+
+        <div className="nos-valeurs-paragraphe">
+
         <GreyParagraph
         >
           Véritables passionnés, nous construisons nos compétences autour de la
@@ -44,6 +47,7 @@ function NosValeurs() {
           pourquoi depuis le <strong>04/03/2021</strong> nous avons lancer la JW
           Corp.
         </GreyParagraph>
+          </div>
       </div>
     </section>
   );
