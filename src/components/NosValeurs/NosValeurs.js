@@ -21,7 +21,7 @@ function NosValeurs() {
                   1000,
                   " transformation numérique",
                   1500,
-                  " blockchain",
+                  " blockchain ",
                   1000,
                   " smart-contracts",
                   1000,
