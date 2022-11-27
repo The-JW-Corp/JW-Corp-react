@@ -7,8 +7,18 @@
   display: block;
   justify-content: center;
   align-items: center;
-  background-color: red;
+  /* background-color: red; */
   width: 70vw;
+}
+
+.levraitextavantform{
+  padding: 5%;
+  font-weight: 700;
+  text-align: center;
+}
+
+#form-title{
+  font-size: 24px;
 }
 
 .texteuh {
@@ -208,3 +218,8 @@
     bottom: 100%;
   }
 }
+
+
+/*
+  Media Queries
+*/

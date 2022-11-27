@@ -1,11 +1,12 @@
 import React from "react";
 import "./Formulaire.css";
+// import "./TestForm.css";
 
 function Formulaire() {
   return (
     <section className="container-formulaire">
       <div className="formulaire">
-        <section id="" className="levraitextavantform">
+        <div className="levraitextavantform">
           <div id="" className="jsAnimation containerOfcontaintainerSize">
             <div id="" className="containerOftextavantform">
               <span id="textavantform">
@@ -20,12 +21,12 @@ function Formulaire() {
               </span>
             </div>
           </div>
-        </section>
+        </div>
 
         <section className="texteuh">
           <div className="deuxieme">
             <div className="login-box">
-              <h2 id="formulairedecontact">CONTACT</h2>
+              <h2 id="form-title">CONTACT</h2>
               <form method="post">
                 <div className="user-box">
                   <input
