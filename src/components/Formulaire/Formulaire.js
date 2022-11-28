@@ -1,6 +1,6 @@
 import React from "react";
-import "./Formulaire.css";
-// import "./TestForm.css";
+// import "./Formulaire.css";
+import "./TestForm.css";
 
 function Formulaire() {
   return (
@@ -23,7 +23,7 @@ function Formulaire() {
           </div>
         </div>
 
-        <section className="texteuh">
+        {/* <section className="texteuh">
           <div className="deuxieme">
             <div className="login-box">
               <h2 id="form-title">CONTACT</h2>
@@ -60,7 +60,27 @@ function Formulaire() {
               </form>
             </div>
           </div>
-        </section>
+        </section> */}
+
+<div class="form">
+        <div class="title">CONTACT</div>
+        <div class="subtitle"></div>
+        <div class="input-container ic1">
+          <input id="firstname" class="input" type="text" placeholder=" " />
+        
+          <div class="cut"></div>
+          <label for="firstname" class="placeholder">EMAIL</label>
+        </div>
+        
+        <div class="input-container ic2">
+          <textarea id="lastname" class="input" type="text" placeholder=" " required=""> </textarea>
+          <label for="lastname" class="placeholder">VOTRE MESSAGE</label>
+        </div>
+        
+        <button type="text" class="submit">ENVOYER</button>
+      </div>
+
+
       </div>
     </section>
   );
