@@ -34,14 +34,15 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer-container-3">
+        <div className="footer-3-cut"></div>
         <div className="footer-tel-wrap">
           <span>
-            Tél:<a href="tel:06 18 28 62 67">06 18 28 62 67</a>/
-            <a href="tel:07 70 07 84 84">07 70 07 84 84</a>
+            Tél:<a href="tel:06 18 28 62 67"> 06 18 28 62 67 </a>/
+            <a href="tel:07 70 07 84 84"> 07 70 07 84 84</a>
           </span>
           <span>
             Email:
-            <a href="mailto: contact@jwcorp.fr">contact@jwcorp.fr</a>
+            <a href="mailto: contact@jwcorp.fr"> contact@jwcorp.fr</a>
           </span>
         </div>
       </div>
