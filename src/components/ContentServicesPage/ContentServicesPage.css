@@ -48,6 +48,17 @@
 .content-services-h2-4-container {
   height: 90px;
 }
+@media (min-width: 414px) {
+  .content-services-h2-2-container {
+    height: 125px;
+  }
+  .content-services-h2-3-container {
+    height: 82px;
+  }
+  .content-services-h2-4-container {
+    height: 80px;
+  }
+}
 @media (min-width: 1200px) {
   .content-services-section p {
     color: #43484d;
