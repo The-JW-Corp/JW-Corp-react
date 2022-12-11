@@ -3,50 +3,62 @@
   justify-content: center;
   align-items: center;
   width: 100vw;
-  height: 280px;
+  height: 500px;
   /* background-color: red; */
   text-align: center;
 }
 
 form {
   background-color: blueviolet;
-  width: 250px;
-  height: 250px;
+  width: 70vw;
+  height: 80%;
   color: white;
   border-radius: 6px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   font-weight: bolder;
+  flex-wrap: wrap;
   /* overflow: hidden; */
 }
 
 .mail-container{
   /* background-color: yellow; */
-  height: 40%;
+  height: 20%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.mail-input{
+.mail-input > input {
   /* background-color: blue; */
+  border-radius: 15px;
+}
+
+.message-input > textarea {
+  border-radius: 15px;
 }
 
 .message-container{
   /* background-color: #3afc09; */
-  height: 70%;
+  height: 50%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
+}
+
+
+.label-mail {
+  height: 25%;
+}
+
+.label-message {
+  height: 20%;
 }
 
 .mesage-input{
   /* background-color: aqua; */
-}
-
-.labels{
-  height: 25%;
+  height: 100%;
 }
 
 .text-label {
@@ -55,6 +67,39 @@ form {
   /* background-color: red; */
 }
 
-/* textarea{
-  height: 100px;
+textarea{
+  height: 15em;
+  width: 100% !important;
+}
+
+.submit-button{
+  background-color: blueviolet;
+  /* appearance: none; */
+  text-decoration: none;
+  cursor: pointer;
+  border-color: aliceblue;
+  border-radius: 10px;
+  padding: 5%;
+  width: 50%;
+  color: white;
+  font-weight: bolder;
+}
+
+.submit-button:hover{
+  background-color: white;
+}
+
+/* .submit-button:focus{
+  background-color: blueviolet;
 } */
+
+.button-container{
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
+  height: 20%;
+  background-color: red;
+  /* padding: 10%; */
+}

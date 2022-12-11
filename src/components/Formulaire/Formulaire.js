@@ -25,24 +25,25 @@ function Formulaire() {
       </form> */}
       <form>
         <div className="mail-container">
-          <label className="labels">
-            <div className="text-label">
-            Email
-            </div>
+          <label className="label-mail">
+            <div className="text-label">Email</div>
             <div className="mail-input">
               <input type="text" name="email" />
             </div>
           </label>
         </div>
         <div className="message-container">
-          <label className="labels">
-            <div className="text-label">
-            Votre message
-            </div>
+          <label className="label-message">
+            <div className="text-label">Votre message</div>
             <div className="message-input">
               <textarea name="message"></textarea>
             </div>
           </label>
+        </div>
+        <div className="button-container">
+          <button className="submit-button" type="submit">
+            Envoyer
+          </button>
         </div>
       </form>
     </section>
