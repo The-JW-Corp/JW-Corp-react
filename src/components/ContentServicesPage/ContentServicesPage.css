@@ -43,8 +43,20 @@
   background-color: transparent;
 }
 .content-services-h2-3-container {
-    height: 90px;
+  height: 90px;
 }
 .content-services-h2-4-container {
-    height: 90px;
+  height: 90px;
+}
+@media (min-width: 1200px) {
+  .content-services-section p {
+    color: #43484d;
+    font-family: "PT Serif", serif;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    letter-spacing: 0.5px;
+    font-weight: 400;
+    width: 1000px;
+  }
 }

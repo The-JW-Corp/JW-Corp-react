@@ -11,3 +11,8 @@
 .content-service-1-wrap > div {
     height: 20px;
 }
+@media (min-width: 768px) {
+    .content-service-1-wrap > h4 {
+        width: 100%;
+    }
+}
