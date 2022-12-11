@@ -71,9 +71,6 @@
   }
 }
 @media (min-width: 640px) {
-  .cta-component {
-    height: 100vh;
-  }
   .cta-wrap {
     align-items: flex-start;
     height: 220px;
