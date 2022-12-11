@@ -1,0 +1,14 @@
+.content-services-section > div > h4 {
+    color: #404040;
+    font-size: 20px;
+    font-weight: bold;
+}
+.content-services-section > div > p {
+    color: #43484d;
+    font-family: 'PT Serif', serif;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    letter-spacing: .5px;
+    font-weight: 400;
+}

@@ -1,11 +1,11 @@
 import React from "react";
-import LandingServices from "../LandingServices/LandingServices";
+import ContentServicesPage from "../ContentServicesPage/ContentServicesPage";
 import "./Home.css";
 
 function Home() {
   return (
     <>
-    <LandingServices />
+      <ContentServicesPage />
     </>
   );
 }

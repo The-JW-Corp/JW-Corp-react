@@ -1,0 +1,11 @@
+.content-services-section {
+    display: flex;
+    justify-content: center;
+}
+.content-services-wrap{
+    width: 80%;
+}
+.content-services-section h2{
+    font-weight: 700;
+    font-size: 32px;
+}
