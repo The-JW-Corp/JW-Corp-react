@@ -55,7 +55,7 @@ const ContentServicesPage = () => {
           pour les missions de tailles conséquentes. Création de NFTs, de tokens
           ERC-20, d’une dApp DeFi/NFT, ou simplement la rédaction de smart
           contracts dans un cadre très spécifique{" "}
-          <a href="#formulairedecontact" class="lienpageformulaire">
+          <a href="#formulairedecontact" class="content-services-button-redirect-contact">
             contactez-nous
           </a>
           .
@@ -67,7 +67,7 @@ const ContentServicesPage = () => {
           Vous avez rédigé ou fait rédiger des smart-contracts qui nécessitent
           une relecture pour s’assurer de la fiabilité et la sécurité de ces
           derniers ?{" "}
-          <a href="#formulairedecontact" class="lienpageformulaire">
+          <a href="#formulairedecontact" class="content-services-button-redirect-contact">
             Contactez-nous
           </a>
           .
