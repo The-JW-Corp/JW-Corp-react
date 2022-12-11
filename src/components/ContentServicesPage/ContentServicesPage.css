@@ -59,6 +59,20 @@
     height: 80px;
   }
 }
+@media (min-width: 768px) {
+  .content-services-h2-1-container {
+    height: 70px;
+  }
+  .content-services-h2-2-container {
+    height: 90px;
+  }
+  .content-services-h2-3-container {
+    height: 50px;
+  }
+  .content-services-h2-4-container {
+    height: 55px;
+  }
+}
 @media (min-width: 1200px) {
   .content-services-section p {
     color: #43484d;
