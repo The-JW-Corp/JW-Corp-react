@@ -1,9 +1,17 @@
-.content-services-section > div > h4 {
+.content-service-1-wrap {
+    display: flex;
+    flex-direction: column;
+}
+.content-service-1-wrap > h4 {
     color: #404040;
     font-size: 20px;
     font-weight: bold;
+    width: 260px;
 }
-.content-services-section > div > p {
+.content-service-1-wrap > div {
+    height: 20px;
+}
+.content-service-1-wrap > p {
     color: #43484d;
     font-family: 'PT Serif', serif;
     font-size: 16px;

@@ -1,17 +1,14 @@
-import React from 'react'
+import React from "react";
 import "./ContactService.css";
 
-const ContentService = ({h4, p}) => {
+const ContentService = ({ h4, p }) => {
   return (
-    <>
-    <h4>
-      {h4}
-    </h4>
-    <p>
-        {p}
-    </p>
-    </>
-  )
-}
+    <div className="content-service-1-wrap">
+      <h4>{h4}</h4>
+      <div></div>
+      <p>{p}</p>
+    </div>
+  );
+};
 
-export default ContentService
+export default ContentService;
