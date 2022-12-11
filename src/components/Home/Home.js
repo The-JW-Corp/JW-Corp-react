@@ -1,11 +1,10 @@
 import React from "react";
-import Footer from "../Footer/Footer";
+import Google from "../Googlemaps/Google";
 import "./Home.css";
-
 function Home() {
   return (
     <>
-      <Footer />
+    <Google />
     </>
   );
 }
