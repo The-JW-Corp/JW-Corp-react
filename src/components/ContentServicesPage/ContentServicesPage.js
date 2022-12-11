@@ -6,7 +6,9 @@ const ContentServicesPage = () => {
   return (
     <section className="content-services-section">
       <div className="content-services-wrap">
-        <h2>Conseil, Accompagnement & Integration</h2>
+        <div className="content-services-h2-container content-services-h2-1-container">
+          <h2>Conseil, Accompagnement & Integration</h2>
+        </div>
         <ContentService
           h4={
             "- Identifier ensemble vos objectifs principaux en lien avec la Blockchain"
@@ -41,7 +43,11 @@ const ContentServicesPage = () => {
             </strong>
           </em>
         </h6>
-        <h2 id="auditservice">Développement de smart-contracts et dApps</h2>
+
+        <div className="content-services-h2-container content-services-h2-2-container">
+          <h2 id="auditservice">Développement de smart-contracts et dApps</h2>
+        </div>
+
         <p>
           Vous êtes porteur de projet, ou un acteur déjà existant et avez besoin
           d'une force de développement externe. La JW Corp met à votre
@@ -54,7 +60,9 @@ const ContentServicesPage = () => {
           </a>
           .
         </p>
-        <h2>Audit de smart contact</h2>
+        <div className="content-services-h2-container content-services-h2-3-container">
+          <h2>Audit de smart contact</h2>
+        </div>
         <p>
           Vous avez rédigé ou fait rédiger des smart-contracts qui nécessitent
           une relecture pour s’assurer de la fiabilité et la sécurité de ces
@@ -64,7 +72,9 @@ const ContentServicesPage = () => {
           </a>
           .
         </p>
-        <h2>Recherche et développement</h2>
+        <div className="content-services-h2-container content-services-h2-4-container">
+          <h2>Recherche et développement</h2>
+        </div>
         <p id="espaceaprestexte">
           Lightning Network, Souls Bound Tokens, ETH2.0, Multi-sigs,
           Tokenisations de bien réels, ... . Nous expérimentons les technologies

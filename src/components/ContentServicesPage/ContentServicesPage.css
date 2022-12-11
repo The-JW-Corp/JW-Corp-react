@@ -1,11 +1,40 @@
 .content-services-section {
     display: flex;
     justify-content: center;
+    padding-top: 100px;
+}
+.content-services-section p {
+    color: #43484d;
+    font-family: 'PT Serif', serif;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    letter-spacing: .5px;
+    font-weight: 400;
 }
 .content-services-wrap{
-    width: 80%;
+    width: 81%;
 }
-.content-services-section h2{
+.content-services-h2-container{
+    display: flex;
+    align-items: flex-start;
+}
+.content-services-h2-1-container{
+    height: 110px;
+}
+.content-services-h2-container h2{
     font-weight: 700;
     font-size: 28px; /* 32px quand écran plus grand*/
+}
+.content-services-wrap > h6 {
+    padding-bottom: 50px;
+}
+.content-services-wrap > h6 > em > strong {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 13px;
+}
+.content-services-h2-2-container{
+    background-color: red;
+    height: 138px;
 }
