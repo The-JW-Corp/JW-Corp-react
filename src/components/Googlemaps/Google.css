@@ -5,6 +5,7 @@
     align-items: center;
     flex-direction: column;
     padding-top: 100px;
+    padding-bottom: 30px;
 }
 .google-maps-container > span {
     font-size: 21px;
