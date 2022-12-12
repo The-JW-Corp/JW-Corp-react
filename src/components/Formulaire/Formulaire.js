@@ -24,6 +24,11 @@ function Formulaire() {
         <input type="submit" value="Envoyer" />
       </form> */}
       <form>
+        <div className="form-title">
+          <strong>
+            <h4>CONTACT</h4>
+          </strong>
+        </div>
         <div className="mail-container">
           <label className="label-mail">
             <div className="text-label">Email</div>
@@ -41,9 +46,11 @@ function Formulaire() {
           </label>
         </div>
         <div className="button-container">
-          <button className="submit-button" type="submit">
-            Envoyer
-          </button>
+          <div>
+            <button className="submit-button" type="submit">
+              Envoyer
+            </button>
+          </div>
         </div>
       </form>
     </section>

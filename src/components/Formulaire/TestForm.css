@@ -1,16 +1,20 @@
+/* IPHONE SE
+  width 375px
+  height 667px
+*/
 .form-container{
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100vw;
-  height: 500px;
+  height: 550px;
   /* background-color: red; */
   text-align: center;
 }
 
 form {
   background-color: blueviolet;
-  width: 70vw;
+  width: 85vw;
   height: 80%;
   color: white;
   border-radius: 6px;
@@ -22,38 +26,48 @@ form {
   /* overflow: hidden; */
 }
 
+form h4 {
+  font-size: 1.4em;
+}
+
 .mail-container{
   /* background-color: yellow; */
   height: 20%;
+  /* width: 100%; */
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+.message-container{
+  height: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.mail-input{
+  /* width: 100%; */
+}
+
 .mail-input > input {
-  /* background-color: blue; */
   border-radius: 15px;
+  width: 90%;
 }
 
 .message-input > textarea {
   border-radius: 15px;
 }
 
-.message-container{
-  /* background-color: #3afc09; */
-  height: 50%;
-  display: flex;
-  justify-content: center;
-  /* align-items: center; */
-}
 
 
 .label-mail {
   height: 25%;
+  width: 80%;
 }
 
 .label-message {
   height: 20%;
+  width: 80%;
 }
 
 .mesage-input{
@@ -68,10 +82,24 @@ form {
 }
 
 textarea{
-  height: 15em;
+  /* height: 15em; */
+  height: 140px ;
   width: 100% !important;
 }
 
+.button-container{
+  display: flex ;
+  justify-self: center ;
+  align-items: center;
+  height: 20%;
+  width: 100%;
+  /* background-color: red; */
+}
+
+.button-container > div {
+  width: 100%;
+  height: 100%;
+}
 .submit-button{
   background-color: blueviolet;
   /* appearance: none; */
@@ -79,8 +107,9 @@ textarea{
   cursor: pointer;
   border-color: aliceblue;
   border-radius: 10px;
-  padding: 5%;
+  /* padding: 5%; */
   width: 50%;
+  height: 60%;
   color: white;
   font-weight: bolder;
 }
@@ -92,14 +121,3 @@ textarea{
 /* .submit-button:focus{
   background-color: blueviolet;
 } */
-
-.button-container{
-  display: flex;
-  justify-self: center;
-  align-items: center;
-  flex-direction: column;
-  /* flex-wrap: wrap; */
-  height: 20%;
-  background-color: red;
-  /* padding: 10%; */
-}
