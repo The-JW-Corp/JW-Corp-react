@@ -72,7 +72,7 @@
 }
 @media (min-width: 640px) {
   .cta-component {
-    height: 100vh;
+    height: 200vh;
   }
   .cta-wrap {
     align-items: flex-start;
