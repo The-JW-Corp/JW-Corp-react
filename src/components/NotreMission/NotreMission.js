@@ -6,7 +6,7 @@ import clipboard from "../../assets/icons/clipboard-list-solid.svg";
 import flask from "../../assets/icons/flask-solid.svg";
 const NotreMission = () => {
   return (
-    <section className="notreMission-component">
+    <section id="mission" className="notreMission-component">
       <div className="notreMission-title-wrap">
         <h2>Notre mission</h2>
         <span>

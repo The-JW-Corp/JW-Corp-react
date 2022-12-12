@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./Navbar.css";
 import "../../assets/fonts/Lato-Black.ttf";
 import jwblanc from "../../assets/logoJWCorp/jwlogosolutionblanc.svg";
+import {Link} from "react-router-dom";
 
 function Navbar() {
   const [isClick, setIsClick] = useState(false);
@@ -23,10 +24,12 @@ function Navbar() {
               <div className="navbar-list-container">
                 <ul className="navbar-list">
                   <li className={isClick ? "li1" : "li1"}>
-                    <a href="/">Accueil</a>
+                    <Link to="/">Accueil</Link>
+                     {/* <a href="/">Accueil</a> */}
                   </li>
                   <li className={isClick ? "li2" : "li1"}>
-                    <a href="/">Nos services</a>
+                  <Link to="/Services">Nos services</Link>
+                    {/* <a href="/">Nos services</a> */}
                   </li>
                   <li className={isClick ? "li3" : "li1"}>
                     <a href="/">Contact</a>
@@ -36,7 +39,7 @@ function Navbar() {
             </nav>
           </div>
           <div className="burger">
-            <a onClick={handleClick} href="/#">
+            <a onClick={handleClick}>
               <span className={isClick ? "span span1-active" : "span"}></span>
               <span className={isClick ? "span span2-active" : "span"}></span>
               <span className={isClick ? "span span3-active" : "span"}></span>

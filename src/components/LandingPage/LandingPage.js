@@ -40,7 +40,7 @@ function LandingPage() {
             </div>
           </div>
         </h1>
-        <a href="">
+        <a href="#mission">
 
         <div className="ease-landing-page"></div>
         <div className="arrow-bloc-landing-page bouncing-animation bounce">

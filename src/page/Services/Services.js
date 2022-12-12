@@ -9,16 +9,17 @@ import Google from '../../components/Googlemaps/Google';
 const Services = () => {
   return (
     <>
+    <div>
+      <Link to="/#test2">Heelo</Link>
+    </div>
       <Navbar />
       <LandingServices />
       <ContentServicesPage />
       Contact
       <Google />
       <Footer />
+    
     </>
-    // <div>
-    //   <Link to="/#test">Heelo</Link>
-    // </div>
   )
 }
 

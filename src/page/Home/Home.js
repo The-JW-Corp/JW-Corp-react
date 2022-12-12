@@ -12,7 +12,7 @@ function Home() {
   const ref = useRef(null);
   const location = useLocation();
   useEffect(() => {
-    if (ref && location.hash.includes("#test")) {
+    if (ref && location.hash.includes("#test2")) {
       ref?.current?.scrollIntoView({
         behavior: "smooth",
         block: "start",
