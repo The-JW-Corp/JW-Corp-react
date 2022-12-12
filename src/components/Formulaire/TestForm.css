@@ -2,20 +2,91 @@
   width 375px
   height 667px
 */
-.form-container{
+
+.form-cta-container {
   display: flex;
-  justify-content: center;
+  /* justify-content: space-around; */
   align-items: center;
+  flex-direction: column;
   width: 100vw;
-  height: 550px;
+  height: 1100px;
   /* background-color: red; */
   text-align: center;
 }
 
+.cta-form {
+  height: 30%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cta-form-paragraph {
+  font-weight: bolder;
+  font-size: 1.2em;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* text-align: center; */
+  flex-direction: column;
+}
+
+.text-cta-form{
+  height: 100%;
+  width: 100%;
+}
+
+
+/* Line animation */
+
+	/* .line-animation-top {
+		width: 400px;
+		height: 2px;
+		background: rgb(211, 8, 8);
+		
+		top: 0%;
+		left: 0%;
+		transform: translate(-50%, -50%);
+	}
+
+	.line-animation::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: green;
+		animation: animate 5s linear infinite;
+	}
+
+	@keyframes animate {
+		0% {
+			left: 0;
+		}
+
+		50% {
+			left: 100%;
+		}
+
+		0% {
+			left: 0;
+		}
+	} */
+
+
+
+
+
+
+/* Form */
+
 form {
   background-color: blueviolet;
   width: 85vw;
-  height: 80%;
+  height: 40%;
   color: white;
   border-radius: 6px;
   display: flex;
@@ -30,22 +101,20 @@ form h4 {
   font-size: 1.4em;
 }
 
-.mail-container{
-  /* background-color: yellow; */
+.mail-container {
   height: 20%;
-  /* width: 100%; */
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.message-container{
+.message-container {
   height: 50%;
   display: flex;
   justify-content: center;
 }
 
-.mail-input{
+.mail-input {
   /* width: 100%; */
 }
 
@@ -58,8 +127,6 @@ form h4 {
   border-radius: 15px;
 }
 
-
-
 .label-mail {
   height: 25%;
   width: 80%;
@@ -70,7 +137,7 @@ form h4 {
   width: 80%;
 }
 
-.mesage-input{
+.mesage-input {
   /* background-color: aqua; */
   height: 100%;
 }
@@ -81,15 +148,15 @@ form h4 {
   /* background-color: red; */
 }
 
-textarea{
+textarea {
   /* height: 15em; */
-  height: 140px ;
+  height: 140px;
   width: 100% !important;
 }
 
-.button-container{
-  display: flex ;
-  justify-self: center ;
+.button-container {
+  display: flex;
+  justify-self: center;
   align-items: center;
   height: 20%;
   width: 100%;
@@ -100,7 +167,7 @@ textarea{
   width: 100%;
   height: 100%;
 }
-.submit-button{
+.submit-button {
   background-color: blueviolet;
   /* appearance: none; */
   text-decoration: none;
@@ -114,7 +181,7 @@ textarea{
   font-weight: bolder;
 }
 
-.submit-button:hover{
+.submit-button:hover {
   background-color: white;
 }
 

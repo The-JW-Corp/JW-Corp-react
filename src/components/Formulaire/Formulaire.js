@@ -7,53 +7,54 @@ function Formulaire() {
   // const [name, setName] = useState("");
 
   return (
-    <section className="form-container">
-      {/* <form>
-        <label>
-          Email
-          <input type="text" name="name" />
-        </label>
-        <label>
-          Votre nom
-          <textarea name="nom" id=""
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-          ></textarea>
-        </label>
-
-        <input type="submit" value="Envoyer" />
-      </form> */}
-      <form>
-        <div className="form-title">
-          <strong>
-            <h4>CONTACT</h4>
-          </strong>
-        </div>
-        <div className="mail-container">
-          <label className="label-mail">
-            <div className="text-label">Email</div>
-            <div className="mail-input">
-              <input type="text" name="email" />
+    <>
+      <section className="form-cta-container">
+        <section className="cta-form">
+          <div className="line-animation-top"></div>
+          <div className="cta-form-paragraph">
+            <div className="text-cta-form">
+              Vous souhaitez prendre contact ? Vous avez un projet Blockchain,
+              un besoin d'accompagnement, de développement ? Un retour à nous
+              faire ?
             </div>
-          </label>
-        </div>
-        <div className="message-container">
-          <label className="label-message">
-            <div className="text-label">Votre message</div>
-            <div className="message-input">
-              <textarea name="message"></textarea>
+            <div className="text-cta-form">
+              Laissez-nous votre message nous reviendrons vers vous au plus vite !
             </div>
-          </label>
-        </div>
-        <div className="button-container">
-          <div>
-            <button className="submit-button" type="submit">
-              Envoyer
-            </button>
           </div>
-        </div>
-      </form>
-    </section>
+          <div className="line-animation-bottom"></div>
+        </section>
+        <form>
+          <div className="form-title">
+            <strong>
+              <h4>CONTACT</h4>
+            </strong>
+          </div>
+          <div className="mail-container">
+            <label className="label-mail">
+              <div className="text-label">Email</div>
+              <div className="mail-input">
+                <input type="text" name="email" />
+              </div>
+            </label>
+          </div>
+          <div className="message-container">
+            <label className="label-message">
+              <div className="text-label">Votre message</div>
+              <div className="message-input">
+                <textarea name="message"></textarea>
+              </div>
+            </label>
+          </div>
+          <div className="button-container">
+            <div>
+              <button className="submit-button" type="submit">
+                Envoyer
+              </button>
+            </div>
+          </div>
+        </form>
+      </section>
+    </>
   );
 }
 export default Formulaire;
