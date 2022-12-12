@@ -27,6 +27,8 @@
 .footer-social-wrap{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    width: 25%;
 }
 .footer-social-wrap a svg:hover{
     transition: 0.5s;
@@ -99,7 +101,16 @@
     .footer-component{
         height: 40vh;
     }
+    .footer-img-wrap{
+        height: 95%;
+    }
 }
+@media (min-width: 375px) {
+    .footer-img-wrap{
+        height: 85%;
+    }
+}
+
 @media (min-width: 768px) {
     .footer-component{
         flex-direction: row;
