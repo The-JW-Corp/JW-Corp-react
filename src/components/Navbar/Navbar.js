@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Navbar.css";
 import "../../assets/fonts/Lato-Black.ttf";
-import jwblanc from "../../assets/jwlogosolutionblanc.svg";
+import jwblanc from "../../assets/logoJWCorp/jwlogosolutionblanc.svg";
 
 function Navbar() {
   const [isClick, setIsClick] = useState(false);
