@@ -10,7 +10,9 @@ function Formulaire() {
     <>
       <section className="form-cta-container">
         <section className="cta-form">
-          <div className="line-animation-top"></div>
+          <div className="line-animation-top-container">
+            <div className="line-animation-top"></div>
+          </div>
           <div className="cta-form-paragraph">
             <div className="text-cta-form">
               Vous souhaitez prendre contact ? Vous avez un projet Blockchain,
@@ -18,16 +20,17 @@ function Formulaire() {
               faire ?
             </div>
             <div className="text-cta-form">
-              Laissez-nous votre message nous reviendrons vers vous au plus vite !
+              Laissez-nous votre message nous reviendrons vers vous au plus vite
+              !
             </div>
           </div>
-          <div className="line-animation-bottom"></div>
+          <div className="line-animation-bottom-container">
+            <div className="line-animation-bottom"></div>
+          </div>
         </section>
         <form>
-          <div className="form-title">
-            <strong>
-              <h4>CONTACT</h4>
-            </strong>
+          <div className="title-container">
+            <h4>CONTACT</h4>
           </div>
           <div className="mail-container">
             <label className="label-mail">
@@ -37,6 +40,7 @@ function Formulaire() {
               </div>
             </label>
           </div>
+          <div className="space-container"></div>
           <div className="message-container">
             <label className="label-message">
               <div className="text-label">Votre message</div>
