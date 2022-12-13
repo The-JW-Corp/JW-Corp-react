@@ -29,19 +29,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* text-align: center; */
+  
   flex-direction: column;
 }
 
-.text-cta-form{
+.text-cta-form {
   height: 100%;
   width: 100%;
 }
 
-
 /* Line animation */
 
-	/* .line-animation-top {
+/* .line-animation-top {
 		width: 400px;
 		height: 2px;
 		background: rgb(211, 8, 8);
@@ -76,11 +75,6 @@
 		}
 	} */
 
-
-
-
-
-
 /* Form */
 
 form {
@@ -88,13 +82,15 @@ form {
   width: 85vw;
   height: 40%;
   color: white;
-  border-radius: 6px;
+  border-radius: 25px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   font-weight: bolder;
   flex-wrap: wrap;
-  /* overflow: hidden; */
+  box-shadow: 17.2px 21.5px 21.1px rgba(0, 0, 0, 0.121),
+    31.1px 38.8px 37.7px rgba(0, 0, 0, 0.202),
+    46px 57.5px 60.7px rgba(0, 0, 0, 0.274), 64px 80px 160px rgba(0, 0, 0, 0.4);
 }
 
 form h4 {
@@ -108,6 +104,32 @@ form h4 {
   align-items: center;
 }
 
+.label-mail {
+  height: 25%;
+  width: 80%;
+}
+
+.mail-input > input {
+  border-radius: 15px;
+  background-color: blueviolet;
+  border: none;
+  border-width: 0em 0em 30% 0em;
+  border-color: white;
+  border-bottom: 1px solid white;
+  color: white;
+  border-radius: 15px;
+  width: 90%;
+  border-width: 10%;
+}
+
+.mail-input > input:focus {
+  outline: none;
+  background-color: rgb(121, 48, 189);
+  transition: background-color 0.25s;
+}
+
+/* Message (textarea) */
+
 .message-container {
   height: 50%;
   display: flex;
@@ -118,18 +140,29 @@ form h4 {
   /* width: 100%; */
 }
 
-.mail-input > input {
+/* .mail-input > input {
+  color: white;
   border-radius: 15px;
-  width: 90%;
-}
+  width: 90%; 
+  border-width: 10%;
+  
+} */
 
 .message-input > textarea {
   border-radius: 15px;
+  background-color: blueviolet;
+  border: none;
+  border-width: 0em 0em 30% 0em;
+  border-color: white;
+  border-bottom: 1px solid white;
+  color: white;
 }
 
-.label-mail {
-  height: 25%;
-  width: 80%;
+.message-input > textarea:focus {
+  outline: none;
+  background-color: rgb(121, 48, 189);
+  transition: background-color 0.25s;
+  color: white;
 }
 
 .label-message {
@@ -174,7 +207,7 @@ textarea {
   cursor: pointer;
   border-color: aliceblue;
   border-radius: 10px;
-  /* padding: 5%; */
+  
   width: 50%;
   height: 60%;
   color: white;
@@ -183,8 +216,8 @@ textarea {
 
 .submit-button:hover {
   background-color: white;
+  color: blueviolet;
+  font-size: 1.2em;
+  transition: background-color, font-size 0.25s;
+  /* transition: font-size 0.5s; */
 }
-
-/* .submit-button:focus{
-  background-color: blueviolet;
-} */

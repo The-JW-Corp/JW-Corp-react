@@ -48,7 +48,7 @@ function Formulaire() {
           <div className="button-container">
             <div>
               <button className="submit-button" type="submit">
-                Envoyer
+                ENVOYER
               </button>
             </div>
           </div>
