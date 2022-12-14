@@ -40,7 +40,7 @@
 .cta-form-paragraph {
   font-weight: bolder;
   font-size: 1.2em;
-  height: 50%;
+  height: 40%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -67,17 +67,15 @@
   width: 35%;
   height: 40%;
   border-bottom: 3px solid blueviolet;
-  animation: line-animation 0.5s linear;
+  animation: line-animation-top 0.5s linear;
 }
 
-@keyframes line-animation {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 100%;
-  }
+@keyframes line-animation-top {
+	from{
+		transform: translateX(-125%) 
+	}
 }
+
 
 .line-animation-bottom-container {
   height: 20%;
@@ -90,7 +88,13 @@
   width: 35% !important;
   height: 40%;
   border-bottom: 3px solid blueviolet;
-  animation: line-animation 0.5s linear;
+  animation: line-animation-bottom 0.5s linear;
+}
+
+@keyframes line-animation-bottom {
+  from{
+    transform: translateX(+125%) 
+  }
 }
 
 /* ----- 2. Form ----- */
