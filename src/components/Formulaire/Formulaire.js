@@ -37,8 +37,27 @@ function Formulaire() {
   useEffect(() => {
     slideInTop("#form");
   }, []);
+
+  const slideInLeft = (element) => {
+    gsap.fromTo(
+      element,
+      {
+        opacity:0,
+        x:-200,
+      },
+      {
+        opacity:1,
+        x:0,
+        scrollTrigger: {
+          trigger: element,
+          start: "top center",
+          end: "bottom center"
+        }
+      }
+    );
+  };
   useEffect(() => {
-    slideInTop("#cta-contact-us");
+    slideInLeft("#cta-contact-us");
   }, []);
 
   return (
