@@ -1,0 +1,13 @@
+.scroll-container{
+    height: 2000px;
+    width: 100vw;
+    background-color: red;
+}
+
+.box {
+    background-color: blue;
+    border-bottom: solid black;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    font-size: 1.4em;
+}

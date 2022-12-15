@@ -71,11 +71,10 @@
 }
 
 @keyframes line-animation-top {
-	from{
-		transform: translateX(-125%) 
-	}
+  from {
+    transform: translateX(-125%);
+  }
 }
-
 
 .line-animation-bottom-container {
   height: 20%;
@@ -92,8 +91,8 @@
 }
 
 @keyframes line-animation-bottom {
-  from{
-    transform: translateX(+125%) 
+  from {
+    transform: translateX(+125%);
   }
 }
 
@@ -222,10 +221,39 @@ form h4 {
   height: 100%;
 }
 
-.text-label {
+.text-label-mail {
   width: auto;
   height: 100%;
   /* background-color: red; */
+  position: relative;
+  /* top: 70%; */
+  left: -40%;
+  animation: test 0.5s !important;
+  top: -10% ;
+}
+
+.text-label:focus {
+  background-color: red!important;
+}
+
+@keyframes test {
+  from {
+    top:90%;
+  }
+  to {
+    top: -10%;
+  }
+}
+
+/* form .mail-container .label-mail .text-label  */
+/* input:focus {
+  background-color: red!important;
+} */
+
+form .mail-container input:focus label {
+  background-color: red !important;
+  height: 100px !important;
+  width: 200px !important;
 }
 
 textarea {
@@ -271,6 +299,7 @@ textarea {
   /* transition: font-size 0.5s; */
 }
 
+/* test animation formulaire */
 
 /*  ----------
 
