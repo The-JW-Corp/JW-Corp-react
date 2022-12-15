@@ -1,75 +1,63 @@
 import React from "react";
-// import { useState } from "react";
 import "./Formulaire.css";
-import { motion, useScroll } from "framer-motion";
-import {gsap} from "gsap";
-import {ScrollTrigger} from "gsap/ScrollTrigger";
-import {ScrollToPlugin} from "gsap/ScrollToPlugin";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import { useEffect, useRef } from "react";
 
-
 function Formulaire() {
-  // const [name, setName] = useState("");
-  const { scrollYProgress } = useScroll();
-  gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
-  const slideInTop = (element) => {
-    gsap.fromTo(
-      element,
-      {
-        opacity:0,
-        y:-200,
-      },
-      {
-        opacity:1,
-        y:0,
-        scrollTrigger: {
-          trigger: element,
-          start: "top center",
-          end: "bottom center"
-        }
-      }
-    );
-  };
-  useEffect(() => {
-    slideInTop("#cta-form-text");
-  }, []);
-  useEffect(() => {
-    slideInTop("#form");
-  }, []);
+  // gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
-  const slideInLeft = (element) => {
-    gsap.fromTo(
-      element,
-      {
-        opacity:0,
-        x:-200,
-      },
-      {
-        opacity:1,
-        x:0,
-        scrollTrigger: {
-          trigger: element,
-          start: "top center",
-          end: "bottom center"
-        }
-      }
-    );
-  };
-  useEffect(() => {
-    slideInLeft("#cta-contact-us");
-  }, []);
+  // const slideInTop = (element) => {
+  //   gsap.fromTo(
+  //     element,
+  //     {
+  //       opacity: 0,
+  //       y: -200,
+  //     },
+  //     {
+  //       opacity: 1,
+  //       y: 0,
+  //       scrollTrigger: {
+  //         trigger: element,
+  //         start: "top center",
+  //         end: "bottom center",
+  //       },
+  //     }
+  //   );
+  // };
+  // useEffect(() => {
+  //   slideInTop("#cta-form-text");
+  // }, []);
+  // useEffect(() => {
+  //   slideInTop("#form");
+  // }, []);
+
+  // const slideInLeft = (element) => {
+  //   gsap.fromTo(
+  //     element,
+  //     {
+  //       opacity: 0,
+  //       x: -200,
+  //     },
+  //     {
+  //       opacity: 1,
+  //       x: 0,
+  //       scrollTrigger: {
+  //         trigger: element,
+  //         start: "top center",
+  //         end: "bottom center",
+  //       },
+  //     }
+  //   );
+  // };
+  // useEffect(() => {
+  //   slideInLeft("#cta-contact-us");
+  // }, []);
 
   return (
     <>
-      <>
-        <motion.div
-          className="progress-bar"
-          style={{
-            scaleX: scrollYProgress,
-          }}
-        />
-      </>
       <>
         <section className="form-cta-container">
           <section className="cta-form">
