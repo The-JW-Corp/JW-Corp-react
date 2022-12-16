@@ -1,13 +1,13 @@
 import React from "react";
 import { motion, useScroll } from "framer-motion";
-import { gsap } from "gsap"
+import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import { useEffect, useRef } from "react";
 
 function AnimationsComponent() {
   const { scrollYProgress } = useScroll();
-  
+
   gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
   const slideInTop = (element) => {
@@ -22,8 +22,9 @@ function AnimationsComponent() {
         y: 0,
         scrollTrigger: {
           trigger: element,
-          start: "top center",
+          start: "20px 80%",
           end: "bottom center",
+          toggleActions: "restart none none none",
         },
       }
     );
@@ -47,8 +48,9 @@ function AnimationsComponent() {
         x: 0,
         scrollTrigger: {
           trigger: element,
-          start: "top center",
+          start: "20px 80%",
           end: "bottom center",
+          toggleActions: "restart none none none",
         },
       }
     );
@@ -56,11 +58,52 @@ function AnimationsComponent() {
   useEffect(() => {
     slideInLeft("#cta-contact-us");
   }, []);
+
+  const lineTriggerTop = (element) => {
+    gsap.fromTo(
+      element,
+      {
+        x: -350,
+      },
+      {
+        x: 0,
+        duration: 0.5,
+        scrollTrigger: {
+          trigger: element,
+          start: "20px 80%",
+          end: "bottom center",
+          toggleActions: "restart none none none",
+        },
+      }
+    );
+  };
+  useEffect(() => {
+    lineTriggerTop(".line-animation-top");
+  }, []);
+
+   const lineTriggerBottom = (element) => {
+     gsap.fromTo(
+       element,
+       {
+         x: "100%",
+       },
+       {
+         x: "0%",
+         duration: 0.5,
+         scrollTrigger: {
+           trigger: element,
+           start: "20px 80%",
+           end: "bottom center",
+           toggleActions: "restart none none none",
+         },
+       }
+     );
+   };
+   useEffect(() => {
+     lineTriggerBottom(".line-animation-bottom");
+   }, []);
   return (
     <>
-      <>
-      
-      </>
       <>
         <motion.div
           className="progress-bar"

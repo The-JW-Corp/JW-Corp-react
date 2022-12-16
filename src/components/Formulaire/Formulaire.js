@@ -7,54 +7,6 @@ import { useEffect, useRef } from "react";
 
 function Formulaire() {
 
-  // gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
-
-  // const slideInTop = (element) => {
-  //   gsap.fromTo(
-  //     element,
-  //     {
-  //       opacity: 0,
-  //       y: -200,
-  //     },
-  //     {
-  //       opacity: 1,
-  //       y: 0,
-  //       scrollTrigger: {
-  //         trigger: element,
-  //         start: "top center",
-  //         end: "bottom center",
-  //       },
-  //     }
-  //   );
-  // };
-  // useEffect(() => {
-  //   slideInTop("#cta-form-text");
-  // }, []);
-  // useEffect(() => {
-  //   slideInTop("#form");
-  // }, []);
-
-  // const slideInLeft = (element) => {
-  //   gsap.fromTo(
-  //     element,
-  //     {
-  //       opacity: 0,
-  //       x: -200,
-  //     },
-  //     {
-  //       opacity: 1,
-  //       x: 0,
-  //       scrollTrigger: {
-  //         trigger: element,
-  //         start: "top center",
-  //         end: "bottom center",
-  //       },
-  //     }
-  //   );
-  // };
-  // useEffect(() => {
-  //   slideInLeft("#cta-contact-us");
-  // }, []);
 
   return (
     <>
@@ -62,7 +14,7 @@ function Formulaire() {
         <section className="form-cta-container">
           <section className="cta-form">
             <div className="line-animation-top-container">
-              <div className="line-animation-top"></div>
+              <div className="line-animation-top" id="line-animation"></div>
             </div>
             <div className="cta-form-paragraph" id="cta-form-text">
               <div className="text-cta-form">

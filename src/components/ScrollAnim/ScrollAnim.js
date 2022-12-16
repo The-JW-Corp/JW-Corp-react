@@ -22,7 +22,7 @@ function ScrollAnim() {
         duration:0.6,
         scrollTrigger: {
             trigger: element,
-            start: "top center",
+            start: "20px 70%",
             end: "bottom center"
         }
     }
