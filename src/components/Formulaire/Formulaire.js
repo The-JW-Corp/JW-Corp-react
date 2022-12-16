@@ -1,16 +1,20 @@
 import React from "react";
+
+import { useRef, useEffect } from "react";
 import "./Formulaire.css";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { ScrollToPlugin } from "gsap/ScrollToPlugin";
-import { useEffect, useRef } from "react";
+import {useForm} from "react-hook-form";
 
 function Formulaire() {
-
+  
+  const {handleSubmit, register, formState : {errors}} = useForm()
+function onSubmit (data) {
+  console.log(data);
+}
 
   return (
     <>
       <>
+        
         <section className="form-cta-container">
           <section className="cta-form">
             <div className="line-animation-top-container">
@@ -31,15 +35,16 @@ function Formulaire() {
               <div className="line-animation-bottom"></div>
             </div>
           </section>
-          <form id="form">
+          <form id="form" onSubmit={handleSubmit(onSubmit)}>
             <div className="title-container">
-              <h4>CONTACT</h4>
+              <h4>CONTACT </h4>
             </div>
             <div className="mail-container">
               <label className="label-mail">
                 <div className="text-label-mail">Email</div>
                 <div className="mail-input">
-                  <input type="text" name="email" />
+                  <input type="text" name="email" {...register("email", {required:true})} />
+                  {errors.nickname && <p className="error-message">Votre mail est requis pour l'envoi du formulaire</p>}
                 </div>
               </label>
             </div>
@@ -48,7 +53,8 @@ function Formulaire() {
               <label className="label-message">
                 <div className="text-label-message">Votre message</div>
                 <div className="message-input">
-                  <textarea name="message"></textarea>
+                  <textarea name="message" {...register("message", {required:true})}></textarea>
+                  {errors.nickname && <p className="error-message">Un message est requis pour l'envoi du formulaire</p>}
                 </div>
               </label>
             </div>

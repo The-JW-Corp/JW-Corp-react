@@ -227,25 +227,22 @@ form h4 {
   width: auto;
   height: 100%;
   /* background-color: red; */
-  position: relative;
+  /* position: relative; */
   /* top: 70%; */
-  left: -40%;
-  animation: test 0.5s !important;
-  top: -10% ;
+  /* left: -40%; */
+  /* animation: test 0.5s !important; */
+  /* top: -10% ; */
 }
 
-.text-label:focus {
-  background-color: red!important;
-}
 
-@keyframes test {
+/* @keyframes test {
   from {
     top:90%;
   }
   to {
     top: -10%;
   }
-}
+} */
 
 /* form .mail-container .label-mail .text-label  */
 /* input:focus {
@@ -300,19 +297,16 @@ textarea {
   transition: background-color 0.75s, font-size 0.5s;
   /* transition: font-size 0.5s; */
 }
+/* ---------------- */
+/* test */
+.dark {
+  background-color: black;
+}
+.light{
+  background-color: yellow;
+}
 
-/* test animation formulaire */
-
-/*  ----------
-
-*/
-
-.progress-bar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 12px;
-  background: blueviolet;
-  transform-origin: 0%;
+.error-message{
+  color: red;
+  font-size:0.4em;
 }

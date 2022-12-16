@@ -4,7 +4,14 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import { useEffect, useRef } from "react";
+import {useForm} from "react-hook-form";
 function ScrollAnim() {
+
+const {handleSubmit, register, formState : {errors}} = useForm()
+function onSubmit (data) {
+  console.log(data);
+}
+
   // Initialise les plugins de gsap et on les instancies
   gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
@@ -19,13 +26,13 @@ function ScrollAnim() {
       {
         opacity: 1,
         y: 0,
-        duration:0.6,
+        duration: 0.6,
         scrollTrigger: {
-            trigger: element,
-            start: "20px 70%",
-            end: "bottom center"
-        }
-    }
+          trigger: element,
+          start: "20px 70%",
+          end: "bottom center",
+        },
+      }
     );
   };
   useEffect(() => {
@@ -46,6 +53,18 @@ function ScrollAnim() {
 
   return (
     <>
+      <div>
+        <form onSubmit={handleSubmit(onSubmit)}>
+          <div>
+            <input type="text" name="nickname" {...register("nickname", {required:true})}/>
+            {errors.nickname && <p>Name is Required</p>}
+          </div>
+          <div>
+            <textarea name="message" {...register("message", {required:true})}></textarea>
+          </div>
+          <button type="submit">bouton</button>
+        </form>
+      </div>
       <section className="scroll-container">
         <div id="box1" className="box">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

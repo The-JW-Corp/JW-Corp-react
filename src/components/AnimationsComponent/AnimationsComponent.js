@@ -1,4 +1,5 @@
 import React from "react";
+import "./Animations-Component.css";
 import { motion, useScroll } from "framer-motion";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
