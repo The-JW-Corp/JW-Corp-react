@@ -3,25 +3,35 @@ import { useRef, useEffect } from "react";
 import "./Formulaire.css";
 import { useForm } from "react-hook-form";
 import { db } from "../../firebaseConfig";
-import {collection, addDoc} from "firebase/firestore/lite";
+import { collection, addDoc } from "firebase/firestore/lite";
+import ScrollAnim from "../ScrollAnim/ScrollAnim";
 
 function Formulaire() {
   const {
     handleSubmit,
     register,
+    reset,
     formState: { errors },
-  } = useForm();
+  } = useForm({
+    defaultValues: {
+      email: "",
+      message: "",
+    },
+  });
 
-
-var collectionUser = collection(db, 'testUserReal2')
-
+  var collectionUser = collection(db, "testResetButton");
   function onSubmit(data) {
     console.log(data);
-
     addDoc(collectionUser, {
       email: `${data.email}`,
-      message: `${data.message}`
-    })
+      message: `${data.message}`,
+    });
+    console.log("c'est envoyé");
+
+    reset();
+    <ScrollAnim />;
+    console.log(data.message + " c'est reset");
+    // Mettre un message "Votre message a bien été envoyé"
   }
   return (
     <>
@@ -60,14 +70,20 @@ var collectionUser = collection(db, 'testUserReal2')
                     {...register("email", {
                       required: true,
                       pattern: {
-                        value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i ,
-                        message: "Ce format de mail n'est pas valide."
+                        value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                        message: "Ce format de mail n'est pas valide.",
                       },
                     })}
                   />
-                  {errors.email && <span className="error-message">Votre mail est requis pour l'envoi du formulaire</span>}
+                  {errors.email && (
+                    <span className="error-message">
+                      Votre mail est requis pour l'envoi du formulaire
+                    </span>
+                  )}
                 </div>
-                  {errors.email?.type == "pattern" && <span className="error-message">{errors.email.message}</span>}
+                {errors.email?.type == "pattern" && (
+                  <span className="error-message">{errors.email.message}</span>
+                )}
               </label>
             </div>
             <div className="space-container"></div>
@@ -77,20 +93,30 @@ var collectionUser = collection(db, 'testUserReal2')
                 <div className="message-input">
                   <textarea
                     name="message"
-                    {...register("message", { 
+                    {...register("message", {
                       required: true,
                       maxLength: {
                         value: 1000,
-                        message: "Votre message ne peut contenir que 1000 caractères maximum."
-                      }, 
+                        message:
+                          "Votre message ne peut contenir que 1000 caractères maximum.",
+                      },
                       minLength: {
                         value: 140,
-                        message:"Votre message doit contenir 140 caractères minimum."
-                      }
+                        message:
+                          "Votre message doit contenir 140 caractères minimum.",
+                      },
                     })}
                   ></textarea>
-                  {errors.message?.type == "maxLength" && <span className="error-message">{errors.message.message}</span>}
-                  {errors.message?.type == "minLength" && <span className="error-message">{errors.message.message}</span>}
+                  {errors.message?.type == "maxLength" && (
+                    <span className="error-message">
+                      {errors.message.message}
+                    </span>
+                  )}
+                  {errors.message?.type == "minLength" && (
+                    <span className="error-message">
+                      {errors.message.message}
+                    </span>
+                  )}
                 </div>
               </label>
             </div>
