@@ -13,6 +13,7 @@
     2.3 Space Container
     2.4 Message Container
     2.5 Button Container
+    2.6 Error message
 */
 
 /* ----- 1. CTA (Call To Action) ----- */
@@ -305,8 +306,9 @@ textarea {
 .light{
   background-color: yellow;
 }
-
+/* ----- 2.6 Error message ----- */
 .error-message{
-  color: red;
-  font-size:0.4em;
+  color: rgb(234, 7, 7);
+  font-size:0.6em;
+  text-decoration: underline;
 }

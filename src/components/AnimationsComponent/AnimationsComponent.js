@@ -21,6 +21,7 @@ function AnimationsComponent() {
       {
         opacity: 1,
         y: 0,
+        duration:0.6,
         scrollTrigger: {
           trigger: element,
           start: "20px 80%",
@@ -47,6 +48,7 @@ function AnimationsComponent() {
       {
         opacity: 1,
         x: 0,
+        duration:0.6,
         scrollTrigger: {
           trigger: element,
           start: "20px 80%",
@@ -68,7 +70,7 @@ function AnimationsComponent() {
       },
       {
         x: 0,
-        duration: 0.5,
+        duration: 0.6,
         scrollTrigger: {
           trigger: element,
           start: "20px 80%",
@@ -90,7 +92,7 @@ function AnimationsComponent() {
        },
        {
          x: "0%",
-         duration: 0.5,
+         duration: 0.6,
          scrollTrigger: {
            trigger: element,
            start: "20px 80%",
