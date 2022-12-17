@@ -2,7 +2,8 @@ import React from "react";
 import { useRef, useEffect } from "react";
 import "./Formulaire.css";
 import { useForm } from "react-hook-form";
-import {collection, addDoc} from "firebase/firestore";
+import { db } from "../../firebaseConfig";
+import {collection, addDoc} from "firebase/firestore/lite";
 
 function Formulaire() {
   const {
@@ -11,11 +12,16 @@ function Formulaire() {
     formState: { errors },
   } = useForm();
 
-  function onSubmit(data, addDoc) {
-    
+
+var collectionUser = collection(db, 'testUserReal2')
+
+  function onSubmit(data) {
     console.log(data);
 
-    
+    addDoc(collectionUser, {
+      email: `${data.email}`,
+      message: `${data.message}`
+    })
   }
   return (
     <>
