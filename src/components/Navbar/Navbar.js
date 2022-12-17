@@ -14,8 +14,11 @@ function Navbar() {
     <>
       <section className="component-navbar">
         <div className="navbar-logo-container">
+          <Link to="/">
+          <img src={jwblanc} alt="JW Corp logo blanc" />
+          </Link>
           <a href="/">
-            <img src={jwblanc} alt="JW Corp logo blanc" />
+            
           </a>
         </div>
         <div className="navbar-container">
