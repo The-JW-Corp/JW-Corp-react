@@ -1,8 +1,8 @@
 import React from "react";
-
 import { useRef, useEffect } from "react";
 import "./Formulaire.css";
 import { useForm } from "react-hook-form";
+import {collection, addDoc} from "firebase/firestore";
 
 function Formulaire() {
   const {
@@ -11,12 +11,12 @@ function Formulaire() {
     formState: { errors },
   } = useForm();
 
-  function onSubmit(data) {
+  function onSubmit(data, addDoc) {
+    
     console.log(data);
+
+    
   }
-  // validate: param => corps de la fonction
-  // .split() le param et loop pour checker si un caractère = à "@"
-  // Si true return true, si false return an error
   return (
     <>
       <>
