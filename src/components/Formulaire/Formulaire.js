@@ -4,7 +4,7 @@ import "./Formulaire.css";
 import { useForm } from "react-hook-form";
 import { db } from "../../firebaseConfig";
 import { collection, addDoc } from "firebase/firestore/lite";
-import ScrollAnim from "../ScrollAnim/ScrollAnim";
+// import { render } from "react-dom";
 
 function Formulaire() {
   const {
@@ -27,12 +27,11 @@ function Formulaire() {
       message: `${data.message}`,
     });
     console.log("c'est envoyé");
-
     reset();
-    <ScrollAnim />;
     console.log(data.message + " c'est reset");
     // Mettre un message "Votre message a bien été envoyé"
   }
+
   return (
     <>
       <>
@@ -42,7 +41,7 @@ function Formulaire() {
               <div className="line-animation-top" id="line-animation"></div>
             </div>
             <div className="cta-form-paragraph" id="cta-form-text">
-              <div className="text-cta-form">
+              <div className="text-cta-form text-cta-form-responsiv1">
                 Vous souhaitez prendre contact ? Vous avez un projet Blockchain,
                 un besoin d'accompagnement, de développement ? Un retour à nous
                 faire ?
@@ -133,4 +132,5 @@ function Formulaire() {
     </>
   );
 }
+
 export default Formulaire;
