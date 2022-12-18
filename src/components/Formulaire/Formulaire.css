@@ -229,28 +229,8 @@ form h4 {
 .text-label-mail {
   width: auto;
   height: 100%;
-  /* background-color: red; */
-  /* position: relative; */
-  /* top: 70%; */
-  /* left: -40%; */
-  /* animation: test 0.5s !important; */
-  /* top: -10% ; */
 }
 
-
-/* @keyframes test {
-  from {
-    top:90%;
-  }
-  to {
-    top: -10%;
-  }
-} */
-
-/* form .mail-container .label-mail .text-label  */
-/* input:focus {
-  background-color: red!important;
-} */
 
 form .mail-container input:focus label {
   background-color: red !important;
