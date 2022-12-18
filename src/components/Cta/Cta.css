@@ -110,15 +110,15 @@
   }
 }
 @media (min-width: 1200px) {
-    .cta-wrap{
-        flex-direction: row;
-        align-items: center;
-        width: 1056px;
-    }
-    .cta-text{
-        width: 70%;
-    }
-    .cta-wrap-button{
-        width: 30%;
-    }
+  .cta-wrap {
+    flex-direction: row;
+    align-items: center;
+    width: 1056px;
+  }
+  .cta-text {
+    width: 70%;
+  }
+  .cta-wrap-button {
+    width: 30%;
+  }
 }

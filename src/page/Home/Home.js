@@ -8,6 +8,7 @@ import NotreMission from "../../components/NotreMission/NotreMission";
 import NosValeurs from "../../components/NosValeurs/NosValeurs";
 import Google from "../../components/Googlemaps/Google";
 import Footer from "../../components/Footer/Footer";
+import AnimationsComponent from "../../components/AnimationsComponent/AnimationsComponent";
 function Home() {
   const ref = useRef(null);
   const location = useLocation();
@@ -30,6 +31,7 @@ function Home() {
       Contact
       <Google />
       <Footer />
+      <AnimationsComponent/>
     </>
   );
 }
