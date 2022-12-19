@@ -1,6 +1,6 @@
 import React from "react";
 import "./Animations-Component.css";
-import { motion, useScroll } from "framer-motion";
+import { delay, motion, useScroll } from "framer-motion";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
@@ -21,7 +21,7 @@ function AnimationsComponent() {
       {
         opacity: 1,
         y: 0,
-        duration:0.6,
+        duration: 0.6,
         scrollTrigger: {
           trigger: element,
           start: "20px 80%",
@@ -31,6 +31,7 @@ function AnimationsComponent() {
       }
     );
   };
+
   useEffect(() => {
     slideInTop("#cta-form-text");
   }, []);
@@ -48,7 +49,7 @@ function AnimationsComponent() {
       {
         opacity: 1,
         x: 0,
-        duration:0.6,
+        duration: 0.6,
         scrollTrigger: {
           trigger: element,
           start: "20px 80%",
@@ -62,6 +63,131 @@ function AnimationsComponent() {
     slideInLeft("#cta-contact-us");
   }, []);
 
+  // Animations "Nos Services" in NotreMission --> Blocs de textes
+  const slideInLeftServiceTitle = (element) => {
+    gsap.fromTo(
+      element,
+      {
+        opacity: 0,
+        x: -200,
+      },
+      {
+        opacity: 1,
+        x: 0,
+        duration: 0.6,
+        scrollTrigger: {
+          trigger: element,
+          start: "20px 60%",
+          end: "bottom center",
+          toggleActions: "restart none none none",
+        },
+      }
+    );
+  };
+  useEffect(() => {
+    slideInLeftServiceTitle("#notre-mission-title");
+  }, []);
+
+  const slideInLeftServiceConseil = (element) => {
+    gsap.fromTo(
+      element,
+      {
+        opacity: 0,
+        x: -200,
+      },
+      {
+        opacity: 1,
+        x: 0,
+        delay: 0.9,
+        duration: 0.6,
+        scrollTrigger: {
+          trigger: element,
+          start: "20px 60%",
+          end: "bottom center",
+          toggleActions: "restart none none none",
+        },
+      }
+    );
+  };
+  useEffect(() => {
+    slideInLeftServiceConseil("#conseil-paragraph");
+  }, []);
+
+  const slideInLeftServiceDev = (element) => {
+    gsap.fromTo(
+      element,
+      {
+        opacity: 0,
+        x: -200,
+      },
+      {
+        opacity: 1,
+        x: 0,
+        delay: 1.5,
+        duration: 0.6,
+        scrollTrigger: {
+          trigger: element,
+          start: "20px 60%",
+          end: "bottom center",
+          toggleActions: "restart none none none",
+        },
+      }
+    );
+  };
+  useEffect(() => {
+    slideInLeftServiceDev("#dev-smartcontracts");
+  }, []);
+
+  const slideInLeftServiceAudit = (element) => {
+    gsap.fromTo(
+      element,
+      {
+        opacity: 0,
+        x: -200,
+      },
+      {
+        opacity: 1,
+        x: 0,
+        delay: 2.1,
+        duration: 0.6,
+        scrollTrigger: {
+          trigger: element,
+          start: "20px 60%",
+          end: "bottom center",
+          toggleActions: "restart none none none",
+        },
+      }
+    );
+  };
+  useEffect(() => {
+    slideInLeftServiceAudit("#audit");
+  }, []);
+
+  const slideInLeftServiceRecherche = (element) => {
+    gsap.fromTo(
+      element,
+      {
+        opacity: 0,
+        x: -200,
+      },
+      {
+        opacity: 1,
+        x: 0,
+        delay: 2.7,
+        duration: 0.6,
+        scrollTrigger: {
+          trigger: element,
+          start: "20px 60%",
+          end: "bottom center",
+          toggleActions: "restart none none none",
+        },
+      }
+    );
+  };
+  useEffect(() => {
+    slideInLeftServiceRecherche("#recherche-developpement");
+  }, []);
+  // Animation "lineAnimation" in Formulaire --> Lines
   const lineTriggerTop = (element) => {
     gsap.fromTo(
       element,
@@ -84,27 +210,28 @@ function AnimationsComponent() {
     lineTriggerTop(".line-animation-top");
   }, []);
 
-   const lineTriggerBottom = (element) => {
-     gsap.fromTo(
-       element,
-       {
-         x: "100%",
-       },
-       {
-         x: "0%",
-         duration: 0.6,
-         scrollTrigger: {
-           trigger: element,
-           start: "20px 80%",
-           end: "bottom center",
-           toggleActions: "restart none none none",
-         },
-       }
-     );
-   };
-   useEffect(() => {
-     lineTriggerBottom(".line-animation-bottom");
-   }, []);
+  const lineTriggerBottom = (element) => {
+    gsap.fromTo(
+      element,
+      {
+        x: "100%",
+      },
+      {
+        x: "0%",
+        duration: 0.6,
+        scrollTrigger: {
+          trigger: element,
+          start: "20px 80%",
+          end: "bottom center",
+          toggleActions: "restart none none none",
+        },
+      }
+    );
+  };
+  useEffect(() => {
+    lineTriggerBottom(".line-animation-bottom");
+  }, []);
+
   return (
     <>
       <>

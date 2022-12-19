@@ -1,7 +1,13 @@
 import React from "react";
 import "./Cta.css";
+import { useLocation, useNavigate} from "react-router-dom";
+
 const Cta = () => {
-  
+const navigate = useNavigate();
+function handleClick () {
+  // navigate('/Services#conseil');
+  console.log("test")
+}
   return (
     <div className="cta-component">
       <div className="cta-wrap">
@@ -10,7 +16,7 @@ const Cta = () => {
           un message afin de commencer à discuter autour de votre projet.
         </p>
         <div className="cta-wrap-button">
-          <a className="cta-button" href="/#" id="cta-contact-us">
+          <a onClick={handleClick} className="cta-button" href="" id="cta-contact-us">
             Contactez-nous
           </a>
         </div>
@@ -18,5 +24,4 @@ const Cta = () => {
     </div>
   );
 };
-
 export default Cta;
