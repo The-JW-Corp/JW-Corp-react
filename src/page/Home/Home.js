@@ -9,6 +9,8 @@ import NosValeurs from "../../components/NosValeurs/NosValeurs";
 import Google from "../../components/Googlemaps/Google";
 import Footer from "../../components/Footer/Footer";
 import AnimationsComponent from "../../components/AnimationsComponent/AnimationsComponent";
+import Formulaire from "../../components/Formulaire/Formulaire"
+
 function Home() {
   const ref = useRef(null);
   const location = useLocation();
@@ -28,7 +30,7 @@ function Home() {
       <NotreMission />
       <Cta />
       <NosValeurs />
-      Contact
+      <Formulaire/>
       <Google />
       <Footer />
       <AnimationsComponent/>
