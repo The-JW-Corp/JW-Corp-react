@@ -245,5 +245,4 @@ function AnimationsComponent() {
     </>
   );
 }
-
 export default AnimationsComponent;
