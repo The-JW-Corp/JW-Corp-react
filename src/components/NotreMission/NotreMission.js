@@ -1,5 +1,6 @@
 import React from "react";
 import "./NotreMission.css";
+import {HashLink} from "react-router-hash-link"
 const NotreMission = () => {
   return (
     <section id="mission" className="notreMission-component">
