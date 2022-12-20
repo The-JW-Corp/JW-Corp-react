@@ -5,7 +5,7 @@ import { db } from "../../firebaseConfig";
 import { collection, addDoc } from "firebase/firestore/lite";
 
 function Formulaire() {
-  const [isFormulaireSent, setIsFormulaireSent] = useState(true);
+  const [isFormulaireSent, setIsFormulaireSent] = useState(false);
   const {
     handleSubmit,
     register,
