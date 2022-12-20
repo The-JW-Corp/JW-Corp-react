@@ -4,12 +4,19 @@ import { delay, motion, useScroll } from "framer-motion";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
+// import { ScrollSmoother } from "gsap/ScrollSmoother";
 import { useEffect, useRef } from "react";
 
 function AnimationsComponent() {
   const { scrollYProgress } = useScroll();
 
   gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
+
+  // ScrollSmoother.create({
+  //   smooth:1,
+  //   effects: true,
+  //   smoothTouch: 0.1
+  // })
 
   const slideInTop = (element) => {
     gsap.fromTo(
@@ -31,6 +38,8 @@ function AnimationsComponent() {
       }
     );
   };
+
+
 
   useEffect(() => {
     slideInTop("#cta-form-text");
@@ -79,7 +88,7 @@ function AnimationsComponent() {
           trigger: element,
           start: "20px 60%",
           end: "bottom center",
-          toggleActions: "restart none none none",
+          // toggleActions: "restart none none none",
         },
       }
     );
@@ -104,7 +113,7 @@ function AnimationsComponent() {
           trigger: element,
           start: "20px 60%",
           end: "bottom center",
-          toggleActions: "restart none none none",
+          // toggleActions: "restart none none none",
         },
       }
     );
@@ -129,7 +138,7 @@ function AnimationsComponent() {
           trigger: element,
           start: "20px 60%",
           end: "bottom center",
-          toggleActions: "restart none none none",
+          // toggleActions: "restart none none none",
         },
       }
     );
@@ -152,9 +161,9 @@ function AnimationsComponent() {
         duration: 0.6,
         scrollTrigger: {
           trigger: element,
-          start: "20px 60%",
+          start: "20px 80%",
           end: "bottom center",
-          toggleActions: "restart none none none",
+          // toggleActions: "restart none none none",
         },
       }
     );
@@ -177,9 +186,9 @@ function AnimationsComponent() {
         duration: 0.6,
         scrollTrigger: {
           trigger: element,
-          start: "20px 60%",
+          start: "20px 80%",
           end: "bottom center",
-          toggleActions: "restart none none none",
+          // toggleActions: "restart none none none",
         },
       }
     );
@@ -199,7 +208,7 @@ function AnimationsComponent() {
         duration: 0.6,
         scrollTrigger: {
           trigger: element,
-          start: "20px 80%",
+          start: "10px 90%",
           end: "bottom center",
           toggleActions: "restart none none none",
         },
@@ -221,7 +230,7 @@ function AnimationsComponent() {
         duration: 0.6,
         scrollTrigger: {
           trigger: element,
-          start: "20px 80%",
+          start: "20px 90%",
           end: "bottom center",
           toggleActions: "restart none none none",
         },

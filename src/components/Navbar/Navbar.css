@@ -9,6 +9,7 @@
   text-transform: uppercase;
   color: #fff;
   background-color: blueviolet;
+  z-index: 1;
 }
 .navbar-logo-container {
   display: flex;
