@@ -12,11 +12,6 @@ function AnimationsComponent() {
 
   gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
-  // ScrollSmoother.create({
-  //   smooth:1,
-  //   effects: true,
-  //   smoothTouch: 0.1
-  // })
 
   const slideInTop = (element) => {
     gsap.fromTo(
@@ -107,7 +102,7 @@ function AnimationsComponent() {
       {
         opacity: 1,
         x: 0,
-        delay: 0.9,
+        delay: 0.6,
         duration: 0.6,
         scrollTrigger: {
           trigger: element,
@@ -132,7 +127,7 @@ function AnimationsComponent() {
       {
         opacity: 1,
         x: 0,
-        delay: 1.5,
+        delay: 1.3,
         duration: 0.6,
         scrollTrigger: {
           trigger: element,
@@ -157,7 +152,7 @@ function AnimationsComponent() {
       {
         opacity: 1,
         x: 0,
-        delay: 2.1,
+        delay: 1.9,
         duration: 0.6,
         scrollTrigger: {
           trigger: element,
@@ -182,7 +177,7 @@ function AnimationsComponent() {
       {
         opacity: 1,
         x: 0,
-        delay: 2.7,
+        delay: 2.5,
         duration: 0.6,
         scrollTrigger: {
           trigger: element,

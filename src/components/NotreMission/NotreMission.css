@@ -105,6 +105,10 @@
   opacity: 0.8;
   text-decoration: underline;
 }
+
+.hashlink-notre-mission{
+  text-decoration: none;
+}
 @media (min-width:375px) {
   .mission-button-container > a{
     width: 300px;
@@ -206,3 +210,4 @@
     background-color: blue;
   }
  } */
+

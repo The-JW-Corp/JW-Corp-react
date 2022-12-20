@@ -1,13 +1,9 @@
 import React from "react";
 import "./Cta.css";
-import { useLocation, useNavigate} from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 const Cta = () => {
-const navigate = useNavigate();
-function handleClick () {
-  // navigate('/Services#conseil');
-  console.log("test")
-}
   return (
     <div className="cta-component">
       <div className="cta-wrap">
@@ -16,9 +12,11 @@ function handleClick () {
           un message afin de commencer à discuter autour de votre projet.
         </p>
         <div className="cta-wrap-button">
-          <a onClick={handleClick} className="cta-button" href="" id="cta-contact-us">
-            Contactez-nous
-          </a>
+          <HashLink smooth to={"/#form"}>
+            <a className="cta-button" href="" id="cta-contact-us">
+              Contactez-nous
+            </a>
+          </HashLink>
         </div>
       </div>
     </div>

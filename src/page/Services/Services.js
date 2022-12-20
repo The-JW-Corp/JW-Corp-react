@@ -6,6 +6,7 @@ import Footer from '../../components/Footer/Footer';
 import LandingServices from '../../components/LandingServices/LandingServices';
 import ContentServicesPage from '../../components/ContentServicesPage/ContentServicesPage';
 import Google from '../../components/Googlemaps/Google';
+import Formulaire from '../../components/Formulaire/Formulaire';
 const Services = () => {
   return (
     <>
@@ -15,7 +16,7 @@ const Services = () => {
       <Navbar />
       <LandingServices />
       <ContentServicesPage />
-      Contact
+      <Formulaire/>
       <Google />
       <Footer />
     

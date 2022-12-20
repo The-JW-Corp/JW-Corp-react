@@ -1,6 +1,8 @@
 import React from "react";
 import "./LandingPage.css";
 import { TypeAnimation } from "react-type-animation";
+import { Link } from "react-router-dom";
+import { HashLink} from "react-router-hash-link";
 
 function LandingPage() {
   return (
@@ -40,20 +42,22 @@ function LandingPage() {
             </div>
           </div>
         </h1>
-        <a href="#mission">
+        <HashLink smooth to={"/#redirect-notre-mission"}>
 
-        <div className="ease-landing-page"></div>
-        <div className="arrow-bloc-landing-page bouncing-animation bounce">
-          <svg
-            className="arrow-icon"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 384 512"
+        {/* <a href="#redirect-notre-mission"> */}
+          <div className="ease-landing-page"></div>
+          <div className="arrow-bloc-landing-page bouncing-animation bounce">
+            <svg
+              className="arrow-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 384 512"
             >
-            {/*! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. */}
-            <path d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z" />
-          </svg>
-        </div>
-            </a>
+              {/*! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. */}
+              <path d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z" />
+            </svg>
+          </div>
+        {/* </a> */}
+        </HashLink>
       </div>
     </section>
   );

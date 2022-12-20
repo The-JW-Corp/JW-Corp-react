@@ -44,7 +44,7 @@ const ContentServicesPage = () => {
         </h6>
 
         <div className="content-services-h2-container content-services-h2-2-container">
-          <h2 id="auditservice">Développement de smart-contracts et dApps</h2>
+          <h2 id="dev-smartcontracts">Développement de smart-contracts et dApps</h2>
         </div>
 
         <p>
@@ -72,7 +72,7 @@ const ContentServicesPage = () => {
           .
         </p>
         <div className="content-services-h2-container content-services-h2-4-container">
-          <h2>Recherche et développement</h2>
+          <h2 id="recherche-developpement">Recherche et développement</h2>
         </div>
         <p id="espaceaprestexte">
           Lightning Network, Souls Bound Tokens, ETH2.0, Multi-sigs,

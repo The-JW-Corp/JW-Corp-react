@@ -14,7 +14,7 @@ function Home() {
   const ref = useRef(null);
   const location = useLocation();
   useEffect(() => {
-    if (ref && location.hash.includes("#test2")) {
+    if (ref && location.hash.includes("#redirect-notre-mission")) {
       ref?.current?.scrollIntoView({
         behavior: "smooth",
         block: "start",
@@ -26,6 +26,7 @@ function Home() {
     <>
       <Navbar />
       <LandingPage />
+      <div id="redirect-notre-mission"></div>
       <NotreMission />
       <Cta />
       <NosValeurs />
