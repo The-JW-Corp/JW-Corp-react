@@ -10,13 +10,13 @@ import Formulaire from '../../components/Formulaire/Formulaire';
 const Services = () => {
   return (
     <>
-    <div>
+    {/* <div>
       <Link to="/#test2">Heelo</Link>
-    </div>
+    </div> */}
       <Navbar />
       <LandingServices />
       <ContentServicesPage />
-      <Formulaire/>
+      <Formulaire />
       <Google />
       <Footer />
     
