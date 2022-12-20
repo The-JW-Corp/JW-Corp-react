@@ -35,7 +35,7 @@ function Formulaire() {
   return (
     <>
       <>
-        <section className="form-cta-container">
+        <section id="bonjour" className="form-cta-container">
           <section className="cta-form">
             <div className="line-animation-top-container">
               <div className="line-animation-top" id="line-animation"></div>

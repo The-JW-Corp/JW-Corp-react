@@ -7,7 +7,7 @@ import flask from "../../assets/icons/flask-solid.svg";
 const NotreMission = () => {
   return (
     <section id="mission" className="notreMission-component">
-      <div className="notreMission-title-wrap">
+      <div id="notre-mission-title" className="notreMission-title-wrap">
         <h2>Notre mission</h2>
         <span>
           Une équipe de passionnés pour vous accompagner sur vos projets
@@ -15,7 +15,7 @@ const NotreMission = () => {
         </span>
       </div>
       <div className="notreMission-service-container">
-        <div className="notreMission-service-subwrap">
+        <div id="conseil-paragraph" className="notreMission-service-subwrap">
           <div classname="notreMission-service-img-wrap">
             <img
               src={chalkBoard}
@@ -31,7 +31,7 @@ const NotreMission = () => {
             </p>
           </a>
         </div>
-        <div className="notreMission-service-subwrap">
+        <div id="dev-smartcontracts" className="notreMission-service-subwrap">
           <div classname="notreMission-service-img-wrap">
             <img src={laptop} alt="laptop" className="notreMission-icone-top" />
           </div>
@@ -43,7 +43,7 @@ const NotreMission = () => {
             </p>
           </a>
         </div>
-        <div className="notreMission-service-subwrap">
+        <div id="audit" className="notreMission-service-subwrap">
           <div classname="notreMission-service-img-wrap">
             <img
               src={clipboard}
@@ -60,7 +60,7 @@ const NotreMission = () => {
             </p>
           </a>
         </div>
-        <div className="notreMission-service-subwrap">
+        <div id="recherche-developpement" className="notreMission-service-subwrap">
           <div classname="notreMission-service-img-wrap">
             <img
               src={flask}
