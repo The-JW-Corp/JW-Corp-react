@@ -6,6 +6,7 @@
   background-color: blueviolet;
   height: 30vh;
   width: 100vw;
+  max-width: 100%;
   color: #fff;
 }
 .landing-service-title-container{
