@@ -17,9 +17,6 @@ function Navbar() {
           <Link to="/">
           <img src={jwblanc} alt="JW Corp logo blanc" />
           </Link>
-          <a href="/">
-            
-          </a>
         </div>
         <div className="navbar-container">
           <div className="nav-container">
