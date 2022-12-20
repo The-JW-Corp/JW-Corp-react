@@ -48,9 +48,19 @@
   width: 60px;
   height: auto;
 }
+.notreMission-icone-top svg{
+  width: 60px;
+  height: auto;
+  fill: black;
+}
 .notreMission-icone-bottom {
   width: 40px;
   height: auto;
+}
+.notreMission-icone-bottom svg{
+  width: 40px;
+  height: auto;
+  fill: black;
 }
 .notreMission-service {
   display: flex;
@@ -61,10 +71,17 @@
   color: rgb(64, 64, 64);
   padding-top: 10px;
 }
-.notreMission-service:hover {
+.notreMission-service-subwrap:hover .notreMission-service, .notreMission-service-subwrap:hover .notreMission-icone-top svg, .notreMission-service-subwrap:hover .notreMission-icone-bottom svg {
+  color: blueviolet;
+  fill: blueviolet;
+  transition: .5s;
+}
+
+/* .notreMission-service:hover {
   color: blueviolet !important;
   transition: 0.5s;
-}
+  fill: blueviolet;
+} */
 .notreMission-service h3 {
   font-weight: 600;
   font-size: 1.5em;

@@ -26,7 +26,7 @@ function Home() {
     <>
       <Navbar />
       <LandingPage />
-      <div id="redirect-notre-mission"></div>
+      <div className="scroll"></div>
       <NotreMission />
       <Cta />
       <NosValeurs />
