@@ -14,6 +14,8 @@
     2.4 Message Container
     2.5 Button Container
     2.6 Error message
+    2.7 Validation Formulaire
+    2.8 Validation Animation Disapear
 
   3. Media Queries
 */
@@ -200,7 +202,6 @@ form h4 {
   /* background-color: green; */
 }
 
-
 .message-input > textarea {
   border-radius: 15px;
   background-color: blueviolet;
@@ -224,7 +225,7 @@ form h4 {
   width: 80%;
 }
 
-.text-label-message{
+.text-label-message {
   height: 80%;
 }
 
@@ -237,7 +238,6 @@ form h4 {
   width: auto;
   height: 100%;
 }
-
 
 form .mail-container input:focus label {
   background-color: red !important;
@@ -287,25 +287,59 @@ textarea {
   transition: background-color 0.75s, font-size 0.5s;
   /* transition: font-size 0.5s; */
 }
-/* ---------------- */
-/* test */
-.dark {
-  background-color: black;
-}
-.light{
-  background-color: yellow;
-}
+
 /* ----- 2.6 Error message ----- */
-.error-message{
-  color: rgb(234, 7, 7);
-  font-size:0.6em;
+
+.error-message {
+  color: rgb(238, 14, 14);
+  font-size: 0.8em;
   text-decoration: underline;
 }
 
-/* 3. Media Queries */
+/* ----- 2.7 Validation Formualaire ----- */
+
+.validation-message-container {
+  height: 25px;
+  width: 100%;
+  /* background-color: yellow; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: large;
+  font-weight: 600;
+  animation: ease-in-out 1s;
+}
+
+.validation-message-text {
+  z-index: 3;
+  width: 35%;
+  height: 100%;
+  max-width: 100% !important;
+  background-color: rgb(19, 208, 19);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  border-radius: 15px;
+  animation: animation-validation 700ms;
+}
+
+@keyframes animation-validation {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+/* ----- 2.8 Validation Animation Disapear ----- */
+
+
+/* ----- 3. Media Queries ----- */
 
 @media (min-width: 750px) {
-  .text-cta-form-responsiv1{
+  .text-cta-form-responsiv1 {
     line-height: 120%;
     height: 100%;
     /* background-color: red; */
@@ -315,14 +349,13 @@ textarea {
   }
 }
 
-
 @media (min-width: 900px) {
   form {
     width: 60vw;
   }
 }
 
-@media (min-width:960px) {
+@media (min-width: 960px) {
   .cta-form-paragraph {
     width: 80%;
     /* background-color: red; */
@@ -337,29 +370,26 @@ textarea {
   }
 }
 @media (min-width: 1650px) {
-  .cta-form{
+  .cta-form {
     font-size: 1.2em;
   }
-  .form-cta-container{
+  .form-cta-container {
     height: 1000px;
   }
-  .cta-form-paragraph{
+  .cta-form-paragraph {
     height: 30%;
-    /* background-color: yellow; */
   }
-  .text-cta-form-responsiv1{
+  .text-cta-form-responsiv1 {
     /* line-height: 120%; */
     height: 100%;
-    /* background-color: red; */
-    /* background-color: red; */
   }
   form {
     width: 40vw;
   }
 }
 
-@media (min-width:2150px) {
-  .cta-form{
+@media (min-width: 2150px) {
+  .cta-form {
     height: 40%;
     /* background-color: red; */
     font-size: 1.3em;
@@ -368,13 +398,13 @@ textarea {
 
 /* ----- Testanime ----- */
 
-.test-anime{
+.test-anime {
   color: blue;
 }
 
-.test-anime2{
+.test-anime2 {
   color: red;
 }
-.test-anime3{
+.test-anime3 {
   color: green;
 }

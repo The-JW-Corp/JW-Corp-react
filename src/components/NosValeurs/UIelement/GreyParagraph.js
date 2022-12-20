@@ -5,7 +5,7 @@ const GreyParagraph = ({ children }) => {
     display: "block",
     justifyContent: "center",
     textAlign: "justify",
-    fontSize: "1.2em",
+    fontSize: "1em",
     padding: "5%",
     width: "40vw",
     fontWeight: "400",
