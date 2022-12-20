@@ -46,6 +46,14 @@
   font-weight: 400;
   text-decoration: none;
   color: #fff;
+  text-decoration: none;
+}
+.cta-button:hover{
+  background-color: transparent;
+  border: 1px #fff solid;
+  transition: all .6s;
+  -moz-transition: all .6s;
+	-webkit-transition: all .6s;
 }
 @media (min-width: 344px) {
   .cta-wrap {

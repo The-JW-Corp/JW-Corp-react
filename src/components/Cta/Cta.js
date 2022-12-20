@@ -12,10 +12,8 @@ const Cta = () => {
           un message afin de commencer à discuter autour de votre projet.
         </p>
         <div className="cta-wrap-button">
-          <HashLink smooth to={"/#form"}>
-            <a className="cta-button" href="" id="cta-contact-us">
+          <HashLink smooth to={"/#form"} className="cta-button" id="cta-contact-us">    
               Contactez-nous
-            </a>
           </HashLink>
         </div>
       </div>

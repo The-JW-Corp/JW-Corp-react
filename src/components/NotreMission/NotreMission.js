@@ -16,7 +16,6 @@ const NotreMission = () => {
           <div className="notreMission-service-img-wrap">
             <HashLink
               className="notreMission-icone-top"
-              smooth
               to={"/Services#conseil"}
             >
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
@@ -26,7 +25,6 @@ const NotreMission = () => {
           </div>
           <HashLink
             className="hashlink-notre-mission notreMission-service"
-            smooth
             to={"/Services#conseil"}
           >
             <h3>Conseil, Accompagnement & Intégration</h3>
@@ -40,7 +38,6 @@ const NotreMission = () => {
           <div className="notreMission-service-img-wrap">
             <HashLink
               className="notreMission-icone-top"
-              smooth
               to={"/Services#dev-smartcontracts"}
             >
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
@@ -50,7 +47,6 @@ const NotreMission = () => {
           </div>
           <HashLink
             className="hashlink-notre-mission notreMission-service"
-            smooth
             to={"/Services#dev-smartcontracts"}
           >
             <h3>Développement de Smart-Contracts</h3>
@@ -63,7 +59,6 @@ const NotreMission = () => {
         <div id="audit" className="notreMission-service-subwrap">
           <div className="notreMission-service-img-wrap">
             <HashLink
-              smooth
               to={"/Services#auditservice"}
               className="notreMission-icone-bottom"
             >
@@ -74,7 +69,6 @@ const NotreMission = () => {
           </div>
           <HashLink
             className="hashlink-notre-mission notreMission-service"
-            smooth
             to={"/Services#auditservice"}
           >
             <h3>Audit</h3>
@@ -91,7 +85,6 @@ const NotreMission = () => {
         >
           <div className="notreMission-service-img-wrap">
             <HashLink
-              smooth
               to={"/Services#recherche-developpement"}
               className="notreMission-icone-bottom"
             >
@@ -102,7 +95,6 @@ const NotreMission = () => {
           </div>
           <HashLink
             className="hashlink-notre-mission notreMission-service"
-            smooth
             to={"/Services#recherche-developpement"}
           >
             <h3>R&D</h3>

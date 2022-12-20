@@ -199,11 +199,15 @@
     width: 40%;
     min-height: 270px;
     padding-top: 0%;
+    padding-left: 50px;
   }
 }
 @media (min-width: 1280px) {
   .notreMission-service-container {
     width: 1280px;
+  }
+  .notreMission-service-subwrap {
+    padding-left: 60px;
   }
   .notreMission-service h3 {
     text-align: left;
