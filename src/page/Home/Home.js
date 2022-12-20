@@ -26,6 +26,7 @@ function Home() {
     <>
       <Navbar />
       <LandingPage />
+      <div className="scroll"></div>
       <NotreMission />
       <Cta />
       <NosValeurs />
