@@ -42,7 +42,7 @@ function LandingPage() {
             </div>
           </div>
         </h1>
-        <HashLink smooth to={"/#redirect-notre-mission"}>
+        <HashLink smooth to={"/#mission"}>
 
         {/* <a href="#redirect-notre-mission"> */}
           <div className="ease-landing-page"></div>

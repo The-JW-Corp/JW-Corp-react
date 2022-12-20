@@ -2,6 +2,7 @@ import Cta from "../../components/Cta/Cta";
 import "./Home.css";
 import React, { useEffect, useRef } from "react";
 import { useLocation } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import Navbar from "../../components/Navbar/Navbar";
 import LandingPage from "../../components/LandingPage/LandingPage";
 import NotreMission from "../../components/NotreMission/NotreMission";
@@ -10,23 +11,13 @@ import Google from "../../components/Googlemaps/Google";
 import Footer from "../../components/Footer/Footer";
 import AnimationsComponent from "../../components/AnimationsComponent/AnimationsComponent";
 import Formulaire from "../../components/Formulaire/Formulaire";
+
 function Home() {
-  const ref = useRef(null);
-  const location = useLocation();
-  useEffect(() => {
-    if (ref && location.hash.includes("#redirect-notre-mission")) {
-      ref?.current?.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-        inline: "center",
-      });
-    }
-  }, [ref, location.hash]);
   return (
     <>
+    {/* <HashLink to="/Services/#footerId">Lien vers footer</HashLink> */}
       <Navbar />
       <LandingPage />
-      <div className="scroll"></div>
       <NotreMission />
       <Cta />
       <NosValeurs />
