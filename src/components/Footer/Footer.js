@@ -6,7 +6,7 @@ import logo from "../../assets/logoJWCorp/jwlogosolutionblanc.svg";
 const Footer = () => {
   return (
     <div className="footer-component">
-      <div id="footerId">rr</div>
+      {/* <div id="footerId">rr</div> */}
       <div className="footer-container-1">
         <div className="footer-img-wrap">
           <a href="/#">

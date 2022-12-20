@@ -3,6 +3,7 @@ import "./Navbar.css";
 import "../../assets/fonts/Lato-Black.ttf";
 import jwblanc from "../../assets/logoJWCorp/jwlogosolutionblanc.svg";
 import {Link} from "react-router-dom";
+import {HashLink} from "react-router-hash-link";
 
 function Navbar() {
   const [isClick, setIsClick] = useState(false);
@@ -32,7 +33,7 @@ function Navbar() {
                     {/* <a href="/">Nos services</a> */}
                   </li>
                   <li className={isClick ? "li3" : "li1"}>
-                    <a href="/">Contact</a>
+                  <HashLink to="/#form">Contact</HashLink>
                   </li>
                 </ul>
               </div>

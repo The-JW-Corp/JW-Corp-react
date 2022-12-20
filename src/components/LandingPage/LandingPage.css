@@ -100,6 +100,11 @@
     fill: white;
     text-decoration: none;
 }
+
+.arrow-icon:hover{
+    fill: #615f5f;
+    transition: 500ms;
+}
 .arrow-bloc-landing-page {
     display: flex;
     justify-content: center;

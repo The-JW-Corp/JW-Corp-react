@@ -22,7 +22,7 @@ function Formulaire() {
     setIsFormulaireSent(true);
     setTimeout(() => {
       setIsFormulaireSent(false);
-    }, 3000);
+    }, 6000);
   };
 
   var collectionUser = collection(db, "testAnimationValidation");
@@ -40,7 +40,7 @@ function Formulaire() {
 
   return (
     <>
-      <section className="form-cta-container">
+      <section id="form" className="form-cta-container">
         <section className="cta-form">
           <div className="line-animation-top-container">
             <div className="line-animation-top" id="line-animation"></div>
@@ -60,7 +60,7 @@ function Formulaire() {
             <div className="line-animation-bottom"></div>
           </div>
         </section>
-        <form id="form" onSubmit={handleSubmit(onSubmit)}>
+        <form  onSubmit={handleSubmit(onSubmit)}>
           <div className="title-container">
             <h4>CONTACT </h4>
           </div>
@@ -75,8 +75,8 @@ function Formulaire() {
                     required: true,
                     pattern: {
                       value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
-                      message: "Ce format de mail n'est pas valide.",
-                    },
+                      message: " Ce format de mail n'est pas valide.",
+                    }
                   })}
                 />
               </div>

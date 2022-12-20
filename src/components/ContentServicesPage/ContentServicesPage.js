@@ -1,6 +1,7 @@
 import React from "react";
 import ContentService from "./ContentService/ContentService";
 import "./ContentServicesPage.css";
+import {HashLink} from "react-router-hash-link";
 const ContentServicesPage = () => {
   return (
     <section className="content-services-section">
@@ -54,9 +55,10 @@ const ContentServicesPage = () => {
           pour les missions de tailles conséquentes. Création de NFTs, de tokens
           ERC-20, d’une dApp DeFi/NFT, ou simplement la rédaction de smart
           contracts dans un cadre très spécifique{" "}
-          <a href="#formulairedecontact" className="content-services-button-redirect-contact">
-            contactez-nous
-          </a>
+          {/* <a href="#formulairedecontact" className="content-services-button-redirect-contact"> */}
+          <HashLink to="/Services#form" className="content-services-button-redirect-contact"> contactez-nous</HashLink>
+            {/* contactez-nous
+          </a> */}
           .
         </p>
         <div className="content-services-h2-container content-services-h2-3-container">
@@ -66,9 +68,7 @@ const ContentServicesPage = () => {
           Vous avez rédigé ou fait rédiger des smart-contracts qui nécessitent
           une relecture pour s’assurer de la fiabilité et la sécurité de ces
           derniers ?{" "}
-          <a href="#formulairedecontact" className="content-services-button-redirect-contact">
-            Contactez-nous
-          </a>
+          <HashLink to="/Services#form" className="content-services-button-redirect-contact"> Contactez-nous</HashLink>
           .
         </p>
         <div className="content-services-h2-container content-services-h2-4-container">

@@ -2,7 +2,8 @@
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  font-size: 17px;
+  font-size: 3.3em;
+  letter-spacing: 0.05em;
   background-color: blueviolet;
   height: 30vh;
   width: 100vw;
@@ -16,5 +17,5 @@
     height: 50%;
 }
 .landing-service-title {
-    font-weight: 700;
+    font-weight: 800;
 }

@@ -283,9 +283,8 @@ textarea {
 .submit-button:hover {
   background-color: white;
   color: blueviolet;
-  font-size: 1.2em;
-  transition: background-color 0.75s, font-size 0.5s;
-  /* transition: font-size 0.5s; */
+  font-size: 1.1em;
+  transition: 0.8s;
 }
 
 /* ----- 2.6 Error message ----- */
