@@ -57,7 +57,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
   flex-direction: column;
 }
 
@@ -342,7 +341,7 @@ textarea {
     font-size: 1.2em;
   }
   .form-cta-container{
-    height: 1600px;
+    height: 1000px;
   }
   .cta-form-paragraph{
     height: 30%;
