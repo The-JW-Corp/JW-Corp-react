@@ -25,7 +25,7 @@ function Formulaire() {
     }, 6000);
   };
 
-  var collectionUser = collection(db, "testAnimationValidation");
+  var collectionUser = collection(db, "JW Corp Beta Live");
   function onSubmit(data) {
     console.log(data);
     addDoc(collectionUser, {
