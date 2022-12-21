@@ -26,10 +26,10 @@ function Navbar() {
                 <ul className="navbar-list">
                   <li className={isClick ? "li1" : "li1"}>
                     <Link to="/">Accueil</Link>
-                     {/* <a href="/">Accueil</a> */}
+
                   </li>
                   <li className={isClick ? "li2" : "li1"}>
-                  <Link to="/Services">Nos services</Link>
+                  <HashLink to="/Services">Nos services</HashLink>
                     {/* <a href="/">Nos services</a> */}
                   </li>
                   <li className={isClick ? "li3" : "li1"}>
