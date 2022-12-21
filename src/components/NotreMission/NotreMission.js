@@ -12,7 +12,7 @@ const NotreMission = () => {
         </span>
       </div>
       <div className="notreMission-service-container">
-        <div id="conseil-paragraph" className="notreMission-service-subwrap">
+        <div id="notre-mission-animation" className="notreMission-service-subwrap">
           <div className="notreMission-service-img-wrap">
             <HashLink
               className="notreMission-icone-top"
@@ -34,7 +34,7 @@ const NotreMission = () => {
             </p>
           </HashLink>
         </div>
-        <div id="dev-smartcontracts" className="notreMission-service-subwrap">
+        <div id="notre-mission-animation" className="notreMission-service-subwrap">
           <div className="notreMission-service-img-wrap">
             <HashLink
               className="notreMission-icone-top"
@@ -56,7 +56,7 @@ const NotreMission = () => {
             </p>
           </HashLink>
         </div>
-        <div id="audit" className="notreMission-service-subwrap">
+        <div id="notre-mission-animation" className="notreMission-service-subwrap">
           <div className="notreMission-service-img-wrap">
             <HashLink
               to={"/Services#auditservice"}
@@ -80,7 +80,7 @@ const NotreMission = () => {
           </HashLink>
         </div>
         <div
-          id="recherche-developpement"
+          id="notre-mission-animation"
           className="notreMission-service-subwrap"
         >
           <div className="notreMission-service-img-wrap">
@@ -107,7 +107,7 @@ const NotreMission = () => {
         </div>
       </div>
       <div className="mission-button-container">
-        <a href="/nos-services">EN SAVOIR +</a>
+        <HashLink to="/Services">EN SAVOIR +</HashLink>
       </div>
     </section>
   );
