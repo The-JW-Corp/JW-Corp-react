@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from "react";
+import React, { useState } from "react";
 import "./Formulaire.css";
 import { useForm } from "react-hook-form";
 import { db } from "../../firebaseConfig";
@@ -60,7 +60,7 @@ function Formulaire() {
             <div className="line-animation-bottom"></div>
           </div>
         </section>
-        <form  onSubmit={handleSubmit(onSubmit)}>
+        <form onSubmit={handleSubmit(onSubmit)}>
           <div className="title-container">
             <h4>CONTACT </h4>
           </div>
@@ -76,7 +76,7 @@ function Formulaire() {
                     pattern: {
                       value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
                       message: " Ce format de mail n'est pas valide.",
-                    }
+                    },
                   })}
                 />
               </div>
@@ -133,16 +133,14 @@ function Formulaire() {
           </div>
         </form>
       </section>
-
-      {isFormulaireSent && (
-        <>
-          <div className="validation-message-container">
-            <div className="validation-message-text">
-              Votre formulaire a bien été envoyé !
-            </div>
-          </div>
-        </>
-      )}
+      <div
+        className={
+          isFormulaireSent
+            ? "validation-message-container" : "validation-message-disapear"}>
+        <div className="validation-message-text">
+          Votre formulaire a bien été envoyé !
+        </div>
+      </div>
     </>
   );
 }

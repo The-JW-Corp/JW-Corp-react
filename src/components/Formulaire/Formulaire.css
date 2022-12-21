@@ -298,20 +298,20 @@ textarea {
 /* ----- 2.7 Validation Formualaire ----- */
 
 .validation-message-container {
-  height: 25px;
+  height: 100%;
   width: 100%;
   /* background-color: yellow; */
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: large;
+  text-align: center;
+  font-size: 0.8em;
   font-weight: 600;
-  animation: ease-in-out 1s;
 }
 
 .validation-message-text {
   z-index: 3;
-  width: 35%;
+  width: 80%;
   height: 100%;
   max-width: 100% !important;
   background-color: rgb(19, 208, 19);
@@ -334,6 +334,30 @@ textarea {
 
 /* ----- 2.8 Validation Animation Disapear ----- */
 
+.validation-message-disapear{
+  height: 100%;
+  width: 100%;
+  /* background-color: yellow; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 0.8em;
+  font-weight: 600;
+  opacity: 0;
+  animation: disapear 3s;
+}
+
+@keyframes disapear 
+{
+  from{
+    opacity: 1;
+  }
+  to{
+    opacity: 0;
+    display: none;
+  }
+}
 
 /* ----- 3. Media Queries ----- */
 
@@ -345,6 +369,15 @@ textarea {
   }
   form {
     width: 70vw;
+  }
+  .validation-message-container{
+    font-size: 1em;
+  }
+  .validation-message-disapear{
+    font-size: 1em;
+  }
+  .validation-message-text{
+    width: 40%;
   }
 }
 
@@ -393,17 +426,4 @@ textarea {
     /* background-color: red; */
     font-size: 1.3em;
   }
-}
-
-/* ----- Testanime ----- */
-
-.test-anime {
-  color: blue;
-}
-
-.test-anime2 {
-  color: red;
-}
-.test-anime3 {
-  color: green;
 }
