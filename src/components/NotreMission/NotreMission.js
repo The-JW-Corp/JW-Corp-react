@@ -5,7 +5,7 @@ const NotreMission = ({ langageState }) => {
   return (
     <section id="mission" className="notreMission-component">
       <div id="notre-mission-title" className="notreMission-title-wrap">
-        <h2>Notre mission</h2>
+        <h2>{langageState ? <>Notre mission</> : <>Our mission</>} </h2>
         <span>
           {langageState ? (
             <>
