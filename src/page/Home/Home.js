@@ -12,19 +12,17 @@ import Footer from "../../components/Footer/Footer";
 import AnimationsComponent from "../../components/AnimationsComponent/AnimationsComponent";
 import Formulaire from "../../components/Formulaire/Formulaire";
 
-function Home() {
+function Home({handlingLangage, langageState}) {
   return (
     <>
-    {/* <HashLink to="/Services/#footerId">Lien vers footer</HashLink> */}
-      <Navbar />
-      <LandingPage />
-      <NotreMission />
-      <Cta />
-      <NosValeurs />
-      <Formulaire />
-      <Google />
-      <Footer />
-      <AnimationsComponent/>
+      <LandingPage langageState={langageState} />
+      <NotreMission langageState={langageState} />
+      <Cta langageState={langageState} />
+      <NosValeurs langageState={langageState} />
+      <Formulaire langageState={langageState} />
+      <Google langageState={langageState} />
+      <Footer langageState={langageState} />
+      <AnimationsComponent langageState={langageState} />
     </>
   );
 }

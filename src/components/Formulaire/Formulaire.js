@@ -4,7 +4,7 @@ import { useForm } from "react-hook-form";
 import { db } from "../../firebaseConfig";
 import { collection, addDoc } from "firebase/firestore/lite";
 
-function Formulaire() {
+function Formulaire({ langageState }) {
   const [isFormulaireSent, setIsFormulaireSent] = useState(false);
   const {
     handleSubmit,
@@ -47,13 +47,31 @@ function Formulaire() {
           </div>
           <div className="cta-form-paragraph" id="cta-form-text">
             <div className="text-cta-form text-cta-form-responsiv1">
-              Vous souhaitez prendre contact ? Vous avez un projet Blockchain,
-              un besoin d'accompagnement, de développement ? Un retour à nous
-              faire ?
+              {langageState ? (
+                <>
+                  Vous souhaitez prendre contact ? Vous avez un projet
+                  Blockchain, un besoin d'accompagnement, de développement ? Un
+                  retour à nous faire ?
+                </>
+              ) : (
+                <>
+                  Do you want to get in touch? You have a project Blockchain
+                  project, a need for support or development? A feedback to us ?
+                </>
+              )}
             </div>
             <div className="text-cta-form">
-              Laissez-nous votre message nous reviendrons vers vous au plus vite
-              !
+              {langageState ? (
+                <>
+                  Laissez-nous votre message nous reviendrons vers vous au plus
+                  vite !
+                </>
+              ) : (
+                <>
+                  Leave us your message and we will get back to you as soon as
+                  possible !
+                </>
+              )}
             </div>
           </div>
           <div className="line-animation-bottom-container">
@@ -62,7 +80,7 @@ function Formulaire() {
         </section>
         <form onSubmit={handleSubmit(onSubmit)}>
           <div className="title-container">
-            <h4>CONTACT </h4>
+            <h4>CONTACT</h4>
           </div>
           <div className="mail-container">
             <label className="label-mail">
@@ -82,7 +100,11 @@ function Formulaire() {
               </div>
               {errors.email && (
                 <span className="error-message">
-                  Votre mail est requis pour l'envoi du formulaire
+                  {langageState ? (
+                    <>Votre mail est requis pour l'envoi du formulaire</>
+                  ) : (
+                    <>Your email is required to send the form</>
+                  )}
                 </span>
               )}
               {errors.email?.type == "pattern" && (
@@ -93,24 +115,50 @@ function Formulaire() {
           <div className="space-container"></div>
           <div className="message-container">
             <label className="label-message">
-              <div className="text-label-message">Votre message</div>
+              <div className="text-label-message">
+                {langageState ? <>Votre message</> : <>Your message</>}
+              </div>
               <div className="message-input">
-                <textarea
-                  name="message"
-                  {...register("message", {
-                    required: true,
-                    maxLength: {
-                      value: 1000,
-                      message:
-                        "Votre message ne peut contenir que 1000 caractères maximum.",
-                    },
-                    minLength: {
-                      value: 140,
-                      message:
-                        "Votre message doit contenir 140 caractères minimum.",
-                    },
-                  })}
-                ></textarea>
+                {langageState ? (
+                  <>
+                    <textarea
+                      name="message"
+                      {...register("message", {
+                        required: true,
+                        maxLength: {
+                          value: 1000,
+                          message:
+                            "Votre message ne peut contenir que 1000 caractères maximum.",
+                        },
+                        minLength: {
+                          value: 140,
+                          message:
+                            "Votre message doit contenir 140 caractères minimum.",
+                        },
+                      })}
+                    ></textarea>
+                  </>
+                ) : (
+                  <>
+                    <textarea
+                      name="message"
+                      {...register("message", {
+                        required: true,
+                        maxLength: {
+                          value: 1000,
+                          message:
+                            "Your message can only contain a maximum of 1000 characters.",
+                        },
+                        minLength: {
+                          value: 140,
+                          message:
+                            "Your message must be at least 140 characters long.",
+                        },
+                      })}
+                    ></textarea>
+                  </>
+                )}
+
                 {errors.message?.type == "maxLength" && (
                   <span className="error-message">
                     {errors.message.message}
@@ -127,7 +175,7 @@ function Formulaire() {
           <div className="button-container">
             <div>
               <button className="submit-button" type="submit">
-                ENVOYER
+                {langageState ? <>ENVOYER</> : <>SEND</>}
               </button>
             </div>
           </div>
@@ -136,9 +184,16 @@ function Formulaire() {
       <div
         className={
           isFormulaireSent
-            ? "validation-message-container" : "validation-message-disapear"}>
+            ? "validation-message-container"
+            : "validation-message-disapear"
+        }
+      >
         <div className="validation-message-text">
-          Votre formulaire a bien été envoyé !
+          {langageState ? (
+            <>Votre formulaire a bien été envoyé !</>
+          ) : (
+            <>Your form has been sent!</>
+          )}
         </div>
       </div>
     </>

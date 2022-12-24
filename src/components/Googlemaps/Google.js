@@ -1,10 +1,21 @@
 import React from "react";
 import "./Google.css";
 
-const Google = () => {
+const Google = ({ langageState }) => {
   return (
     <div className="google-maps-container">
-      <span>Venez nous rencontrer dans nos locaux à La Défense (uniquement sur RDV).</span>
+      <span>
+        {langageState ? (
+          <>
+            Venez nous rencontrer dans nos locaux à La Défense (uniquement sur
+            RDV).
+          </>
+        ) : (
+          <>
+            Come and meet us in our offices in La Défense (by appointment only).
+          </>
+        )}
+      </span>
       <div className="google-maps-cut"></div>
       <iframe
         title="google maps"

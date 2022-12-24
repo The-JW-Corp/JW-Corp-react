@@ -3,7 +3,7 @@ import "./Footer.css";
 import logo from "../../assets/logoJWCorp/jwlogosolutionblanc.svg";
 
 
-const Footer = () => {
+const Footer = ({langageState}) => {
   return (
     <div className="footer-component">
       <div className="footer-container-1">
@@ -37,7 +37,8 @@ const Footer = () => {
         <div className="footer-3-cut"></div>
         <div className="footer-tel-wrap">
           <span>
-            Tél:<a href="tel:06 18 28 62 67"> 06 18 28 62 67 </a>/
+            {langageState ? <>Tél:</> : <>Phone:</>}
+            <a href="tel:06 18 28 62 67"> 06 18 28 62 67 </a>/
             <a href="tel:07 70 07 84 84"> 07 70 07 84 84</a>
           </span>
           <span>

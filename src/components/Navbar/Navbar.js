@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import "./Navbar.css";
 import "../../assets/fonts/Lato-Black.ttf";
 import jwblanc from "../../assets/logoJWCorp/jwlogosolutionblanc.svg";
-import {Link} from "react-router-dom";
-import {HashLink} from "react-router-hash-link";
+import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
-function Navbar() {
+function Navbar({ handlingLangage, langageState }) {
   const [isClick, setIsClick] = useState(false);
   const handleClick = () => {
     setIsClick(!isClick);
@@ -16,7 +16,7 @@ function Navbar() {
       <section className="component-navbar">
         <div className="navbar-logo-container">
           <Link to="/">
-          <img src={jwblanc} alt="JW Corp logo blanc" />
+            <img src={jwblanc} alt="JW Corp logo blanc" />
           </Link>
         </div>
         <div className="navbar-container">
@@ -25,20 +25,24 @@ function Navbar() {
               <div className="navbar-list-container">
                 <ul className="navbar-list">
                   <li className={isClick ? "li1" : "li1"}>
-                    <Link to="/">Accueil</Link>
-
+                    <Link to="/">{langageState ? "Accueil" : "Home"}</Link>
                   </li>
                   <li className={isClick ? "li2" : "li1"}>
-                  <HashLink to="/Services">Nos services</HashLink>
+                    <HashLink to="/Services">Nos services</HashLink>
                     {/* <a href="/">Nos services</a> */}
                   </li>
                   <li className={isClick ? "li3" : "li1"}>
-                  <HashLink to="/#form">Contact</HashLink>
+                    <HashLink to="/#form">Contact</HashLink>
                   </li>
                 </ul>
               </div>
             </nav>
           </div>
+          FR/EN  
+          <label className="switch">
+            <input type="checkbox" onChange={handlingLangage} />
+            <span className="slider round"></span>
+          </label>
           <div className="burger">
             <a onClick={handleClick}>
               <span className={isClick ? "span span1-active" : "span"}></span>

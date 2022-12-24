@@ -7,19 +7,16 @@ import LandingServices from '../../components/LandingServices/LandingServices';
 import ContentServicesPage from '../../components/ContentServicesPage/ContentServicesPage';
 import Google from '../../components/Googlemaps/Google';
 import Formulaire from '../../components/Formulaire/Formulaire';
-const Services = () => {
+const Services = ({langageState}) => {
   return (
     <>
-    {/* <div>
-      <Link to="/#test2">Heelo</Link>
-    </div> */}
-      <Navbar />
-      <LandingServices />
-      <ContentServicesPage />
-      <Formulaire />
-      <Google />
-      <Footer />
-    
+      {/* <Navbar langageState={langageState}/> */}
+      <LandingServices langageState={langageState}/>
+      <ContentServicesPage langageState={langageState}/>
+      <Formulaire langageState={langageState}/>
+      <Google langageState={langageState}/>
+      <Footer langageState={langageState}/>
+
     </>
   )
 }

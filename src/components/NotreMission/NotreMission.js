@@ -1,18 +1,30 @@
 import React from "react";
 import "./NotreMission.css";
 import { HashLink } from "react-router-hash-link";
-const NotreMission = () => {
+const NotreMission = ({ langageState }) => {
   return (
     <section id="mission" className="notreMission-component">
       <div id="notre-mission-title" className="notreMission-title-wrap">
         <h2>Notre mission</h2>
         <span>
-          Une équipe de passionnés pour vous accompagner sur vos projets
-          Blockchain.
+          {langageState ? (
+            <>
+              Une équipe de passionnés pour vous accompagner sur vos projets
+              Blockchain.
+            </>
+          ) : (
+            <>
+              A team of passionate people to accompany you on your Blockchain
+              projects.
+            </>
+          )}
         </span>
       </div>
       <div className="notreMission-service-container">
-        <div id="notre-mission-animation" className="notreMission-service-subwrap">
+        <div
+          id="notre-mission-animation"
+          className="notreMission-service-subwrap"
+        >
           <div className="notreMission-service-img-wrap">
             <HashLink
               className="notreMission-icone-top"
@@ -27,14 +39,32 @@ const NotreMission = () => {
             className="hashlink-notre-mission notreMission-service"
             to={"/Services#conseil"}
           >
-            <h3>Conseil, Accompagnement & Intégration</h3>
+            <h3>
+              {langageState ? (
+                <> Conseil, Accompagnement & Intégration</>
+              ) : (
+                <>Consulting, Support & Integration</>
+              )}
+            </h3>
             <p>
-              Nous mobilisons nos connaissances et nos compétences au service de
-              vos projets Blockchain.
+              {langageState ? (
+                <>
+                  Nous mobilisons nos connaissances et nos compétences au
+                  service de vos projets Blockchain.
+                </>
+              ) : (
+                <>
+                  We mobilize our knowledge and skills to serve your your
+                  Blockchain projects.
+                </>
+              )}
             </p>
           </HashLink>
         </div>
-        <div id="notre-mission-animation" className="notreMission-service-subwrap">
+        <div
+          id="notre-mission-animation"
+          className="notreMission-service-subwrap"
+        >
           <div className="notreMission-service-img-wrap">
             <HashLink
               className="notreMission-icone-top"
@@ -49,14 +79,32 @@ const NotreMission = () => {
             className="hashlink-notre-mission notreMission-service"
             to={"/Services#dev-smartcontracts"}
           >
-            <h3>Développement de Smart-Contracts</h3>
+            <h3>
+              {langageState ? (
+                <>Développement de Smart-Contracts</>
+              ) : (
+                <>Smart-contracts development</>
+              )}
+            </h3>
             <p>
-              Sécurisés, optimisés et personalisés, notre équipe développe des
-              smart-contracts adaptés à vos besoins.
+              {langageState ? (
+                <>
+                  Sécurisés, optimisés et personalisés, notre équipe développe
+                  des smart-contracts adaptés à vos besoins.
+                </>
+              ) : (
+                <>
+                  Secure, optimized and personalized, our team develops
+                  smart-contracts adapted to your needs.
+                </>
+              )}
             </p>
           </HashLink>
         </div>
-        <div id="notre-mission-animation" className="notreMission-service-subwrap">
+        <div
+          id="notre-mission-animation"
+          className="notreMission-service-subwrap"
+        >
           <div className="notreMission-service-img-wrap">
             <HashLink
               to={"/Services#auditservice"}
@@ -73,9 +121,19 @@ const NotreMission = () => {
           >
             <h3>Audit</h3>
             <p>
-              Vos projets ou vos smart contract audité par nos experts. Nous
-              vous faisons parvenir un rapport détaillé contenant notamment
-              observations et plan d'actions.
+              {langageState ? (
+                <>
+                  Vos projets ou vos smart contract audité par nos experts. Nous
+                  vous faisons parvenir un rapport détaillé contenant notamment
+                  observations et plan d'actions.
+                </>
+              ) : (
+                <>
+                  Your projects or your smart contracts audited by our experts.
+                  We send you a detailed report containing in particular
+                  observations and action plan.
+                </>
+              )}
             </p>
           </HashLink>
         </div>
@@ -99,15 +157,27 @@ const NotreMission = () => {
           >
             <h3>R&D</h3>
             <p>
-              Nous étudions les différents cas d'usage lié aux nouvelles
-              technologies expérimentales autour de la Blockchain (Lightning
-              Network, ETH 2.0, SBTs...).
+              {langageState ? (
+                <>
+                  Nous étudions les différents cas d'usage lié aux nouvelles
+                  technologies expérimentales autour de la Blockchain (Lightning
+                  Network, ETH 2.0, SBTs...).
+                </>
+              ) : (
+                <>
+                  We study the different use cases related to the new
+                  technologies experimental technologies around the Blockchain
+                  (Lightning Network, ETH 2.0, SBTs...).
+                </>
+              )}
             </p>
           </HashLink>
         </div>
       </div>
       <div className="mission-button-container">
-        <HashLink to="/Services">EN SAVOIR +</HashLink>
+        <HashLink to="/Services">
+          {langageState ? <>EN SAVOIR +</> : <>READ MORE</>}
+        </HashLink>
       </div>
     </section>
   );
