@@ -8,7 +8,9 @@ function NosValeurs({ langageState }) {
     <section className="bloc-nos-valeurs">
       <div className="nos-valeurs">
         <div>
-          <h3 className="nos-valeurs-title">Nos valeurs</h3>
+          <h3 className="nos-valeurs-title">
+            {langageState ? <>Nos valeurs</> : <>Our values</>}
+            </h3>
         </div>
         <div className="bloc-typed-nos-valeurs">
           <div className="bloc-vide-nos-valeurs"></div>

@@ -19,6 +19,15 @@ function Navbar({ handlingLangage, langageState }) {
             <img src={jwblanc} alt="JW Corp logo blanc" />
           </Link>
         </div>
+        <div className="switch-langage-container">
+          <div>FR/EN  </div>
+          <div>
+            <label className="switch">
+              <input type="checkbox" onChange={handlingLangage} />
+              <span className="slider round"></span>
+            </label>
+          </div>
+        </div>
         <div className="navbar-container">
           <div className="nav-container">
             <nav className={isClick ? "navbar-active" : "navbar"}>
@@ -28,8 +37,9 @@ function Navbar({ handlingLangage, langageState }) {
                     <Link to="/">{langageState ? "Accueil" : "Home"}</Link>
                   </li>
                   <li className={isClick ? "li2" : "li1"}>
-                    <HashLink to="/Services">Nos services</HashLink>
-                    {/* <a href="/">Nos services</a> */}
+                    <HashLink to="/Services">
+                      {langageState ? <>Nos services</> : <>Our Services</>}
+                    </HashLink>
                   </li>
                   <li className={isClick ? "li3" : "li1"}>
                     <HashLink to="/#form">Contact</HashLink>
@@ -38,11 +48,14 @@ function Navbar({ handlingLangage, langageState }) {
               </div>
             </nav>
           </div>
-          FR/EN  
-          <label className="switch">
-            <input type="checkbox" onChange={handlingLangage} />
-            <span className="slider round"></span>
-          </label>
+          <div></div>
+          {/* <div className="switch-langage-container">
+            FR/EN  
+            <label className="switch">
+              <input type="checkbox" onChange={handlingLangage} />
+              <span className="slider round"></span>
+            </label>
+          </div> */}
           <div className="burger">
             <a onClick={handleClick}>
               <span className={isClick ? "span span1-active" : "span"}></span>
