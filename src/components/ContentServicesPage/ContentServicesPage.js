@@ -187,25 +187,44 @@ const ContentServicesPage = ({ langageState }) => {
         <div className="content-services-h2-container content-services-h2-4-container">
           <h2 id="recherche-developpement">
             {langageState ? (
-              <>Recherche et développement</>
+              <>Design UI/UX & Illustrations</>
             ) : (
-              <>Research & Development</>
+              <>Design UI/UX & Illustrations</>
             )}
           </h2>
         </div>
         <p id="espaceaprestexte">
           {langageState ? (
             <>
-              Lightning Network, Souls Bound Tokens, ETH2.0, Multi-sigs,
-              Tokenisations de bien réels, ... . Nous expérimentons les
-              technologies innovantes autour de la Blockchain pour servir au
-              mieux vos projets.
+              Chez JW Corp, nous proposons une gamme complète de services de
+              design pour vous aider à donner vie à votre vision créative. Nous
+              nous spécialisons dans l'illustration, la recherche UX/UI, la
+              création de design system, et pouvons même automatiser le tout
+              pour les projets les plus ambitieux. Nous créons également des
+              prototypes avec des animations complexes, une direction artistique
+              soignée et une recherche de tendances pointue. Nous sommes là pour
+              vous accompagner tout au long du processus, en vous aidant à
+              affiner vos fonctionnalités et à vous assurer que vous offrez une
+              expérience utilisateur exceptionnelle. Enfin, nous sommes fiers
+              d'avoir une expérience solide de design web3, avec plus de 25
+              projets web accompagnés et la capacité d'onboarder le grand
+              public. Chez JW Corp, nous sommes déterminés à fournir des designs
+              qui feront la différence pour votre entreprise.
             </>
           ) : (
             <>
-              Lightning Network, Souls Bound Tokens, ETH2.0, Multi-sigs,
-              Tokenizations of real assets, ... . We experiment with innovative
-              technologies around the Blockchain to serve your projects.
+              At JW Corp, we offer a complete range of design services to help
+              bring your creative vision to life. We specialize in illustration,
+              UX/UI research, design system creation, and can even automate
+              everything for the most ambitious projects. We also create
+              prototypes with complex animations, a careful artistic direction,
+              and sharp trend research. We are here to accompany you throughout
+              the process, helping you refine your features and ensuring that
+              you offer an exceptional user experience. Finally, we are proud to
+              have a strong experience in web3 design, with over 25 web projects
+              supported and the ability to onboard the general public. At JW
+              Corp, we are determined to provide designs that make a difference
+              for your business.
             </>
           )}
         </p>
